@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NiceImageView">
+        <!--是否显示为圆形（默认为矩形）默认false-->
+        <attr name="is_circle" format="boolean" />
+        <!--border、inner_border是否覆盖图片内容 默认false-->
+        <attr name="is_cover_src" format="boolean" />
+        <!--统一设置四个角的圆角半径 默认0dp-->
+        <attr name="corner_radius" format="dimension" />
+        <!--左上角圆角半径 默认0dp-->
+        <attr name="corner_top_left_radius" format="dimension" />
+        <!--右上角圆角半径 默认0dp-->
+        <attr name="corner_top_right_radius" format="dimension" />
+        <!--左下角圆角半径 默认0dp-->
+        <attr name="corner_bottom_left_radius" format="dimension" />
+        <!--右下角圆角半径 默认0dp-->
+        <attr name="corner_bottom_right_radius" format="dimension" />
+        <!--边框宽度 默认0dp-->
+        <attr name="border_width" format="dimension" />
+        <!--边框颜色 默认#ffffff-->
+        <attr name="border_color" format="color" />
+        <!--相当于内层边框（is_circle为true时支持） 默认0dp-->
+        <attr name="inner_border_width" format="dimension" />
+        <!--内边框颜色 默认#ffffff-->
+        <attr name="inner_border_color" format="color" />
+        <!--图片上绘制的遮罩颜色 不设置颜色则不绘制-->
+        <attr name="mask_color" format="color" />
+    </declare-styleable>
+</resources>
