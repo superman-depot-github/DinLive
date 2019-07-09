@@ -1,1 +1,1 @@
-include ':app', ':niceimageview'
+include ':app', ':niceimageview', ':conmon_home', ':dinlive_baselib'

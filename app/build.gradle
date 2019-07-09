@@ -10,6 +10,12 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
     }
     buildTypes {
         release {
@@ -61,4 +67,9 @@ dependencies {
     implementation 'com.tencent.ilivesdk:ilivesdk:1.9.6'
     //万能的ImageView控件 implementation 'com.github.SheHuan:NiceImageView:1.0.5'
     implementation project(':niceimageview')
+    //一个用于帮助 Android App 进行组件化改造的框架 —— 支持模块间的路由、通信、解耦
+    implementation 'com.alibaba:arouter-api:1.5.0'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.5.0'
+    //QMUI
+    implementation 'com.qmuiteam:qmui:1.2.0'
 }
