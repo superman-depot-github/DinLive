@@ -69,6 +69,14 @@ public class PerfectToolBar extends Toolbar {
         }
     }
 
+    public void setCenterNavigationText(String s) {
+        barTitle.setText(s);
+    }
+
+    public void setLeftNavigationText(String s) {
+        barRight.setText(s);
+    }
+
     private LeftNavigationOnClickListener leftNavigationOnClickListener;
 
     public void setLeftNavigationOnClickListener(LeftNavigationOnClickListener leftNavigationOnClickListener) {
