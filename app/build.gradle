@@ -38,10 +38,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    //包裹控件
-    implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
-    //模糊控件
-    implementation 'com.github.mmin18:realtimeblurview:1.0.6'
     //加载dialog
     implementation 'com.github.gittjy:LoadingDialog:1.0.2'
     implementation project(':module_login')

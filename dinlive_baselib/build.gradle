@@ -62,13 +62,14 @@ dependencies {
     api 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
     api 'com.squareup.okhttp3:logging-interceptor:3.8.0'
 
-    //下拉刷新
+    //下拉刷新 https://github.com/scwang90/SmartRefreshLayout
     api "com.scwang.smartrefresh:SmartRefreshLayout:$SmartRefreshLayout"
     api "com.scwang.smartrefresh:SmartRefreshHeader:$SmartRefreshLayout"
 
     //glide图片加载库
     api 'com.github.bumptech.glide:glide:4.9.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    api 'jp.wasabeef:glide-transformations:4.0.1'
 
     // 组件化框架  模块间路由，通信，结偶 https://github.com/alibaba/ARouter/blob/master/README_CN.md
     api "com.alibaba:arouter-api:$arouter_api"
@@ -79,6 +80,9 @@ dependencies {
 
     //android工具集合 https://github.com/Blankj/AndroidUtilCode/blob/master/utilcode/README-CN.md
     api "com.blankj:utilcode:$utilcode"
+
+    //包裹控件 https://github.com/H07000223/FlycoRoundView
+    api 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
 
     //万能的ImageView控件 implementation 'com.github.SheHuan:NiceImageView:1.0.5'
     api 'com.github.SheHuan:NiceImageView:1.0.5'

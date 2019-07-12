@@ -1,6 +1,5 @@
 package com.dinlive.din.presenter;
 
-
 import com.dinlive.din.HomeActivity;
 import com.dinlive.din.baselib.Base.BasePresenter;
 import com.dinlive.din.view.IVAct_Home;
