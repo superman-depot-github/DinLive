@@ -1,15 +1,17 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'com.jakewharton.butterknife'
 android {
-    compileSdkVersion 28
+    compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "com.dinlive.din"
-        minSdkVersion 18
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
 
         javaCompileOptions {
             annotationProcessorOptions {
@@ -23,6 +25,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -32,44 +38,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation 'com.android.support:design:28.0.0'
-    //butterknife
-    implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    //RxAndroid
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
-    //RxJava
-    implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
-    //Rx生命周期管理
-    implementation 'com.trello.rxlifecycle2:rxlifecycle:2.1.0'
-    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
-    //网络请求框架
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
-    //下拉刷新
-    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-11'
-    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-11'
-    //底部导航栏
-    implementation 'com.github.forvv231:EasyNavigation:1.0.2'
     //包裹控件
     implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
     //模糊控件
     implementation 'com.github.mmin18:realtimeblurview:1.0.6'
     //加载dialog
     implementation 'com.github.gittjy:LoadingDialog:1.0.2'
-    //glide图片加载库
-    implementation 'com.github.bumptech.glide:glide:4.9.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
-    //腾讯直播库
-    implementation 'com.tencent.ilivesdk:ilivesdk:1.9.6'
-    //万能的ImageView控件 implementation 'com.github.SheHuan:NiceImageView:1.0.5'
-    implementation project(':niceimageview')
-    //一个用于帮助 Android App 进行组件化改造的框架 —— 支持模块间的路由、通信、解耦
-    implementation 'com.alibaba:arouter-api:1.5.0'
-    annotationProcessor 'com.alibaba:arouter-compiler:1.5.0'
-    //QMUI
-    implementation 'com.qmuiteam:qmui:1.2.0'
+    implementation project(':module_login')
+    implementation project(':module_person')
+    implementation project(':module_home')
+    implementation project(':dinlive_baselib')
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife"
+    annotationProcessor "com.alibaba:arouter-compiler:$arouter_compiler"
 }

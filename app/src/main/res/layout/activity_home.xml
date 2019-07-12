@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
 
     <FrameLayout
         android:id="@+id/messageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
 
-    <com.next.easynavigation.view.EasyNavigationBar
-        android:id="@+id/bottomBar"
+
+    <com.dinlive.din.baselib.wiget.NoScrollViewPager
+        android:id="@+id/vp_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:Easy_addIconSize="40dp"
-        app:Easy_navigationHeight="60dp"
-        app:Easy_hasPadding="false"
-        app:Easy_navigationBackground="#ffffffff">
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
 
-    </com.next.easynavigation.view.EasyNavigationBar>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc" />
 
-</RelativeLayout>
+    <com.dinlive.din.baselib.wiget.bottomview.BottomView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+</LinearLayout>

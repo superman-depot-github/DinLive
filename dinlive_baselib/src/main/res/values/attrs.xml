@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--显示提示的View-->
+    <declare-styleable name="TipView">
+        <attr name="tipBackgroundColor" format="color" />
+        <attr name="tipTextColor" format="color" />
+        <attr name="tipText" format="string" />
+        <attr name="tipTextSize" format="dimension" />
+    </declare-styleable>
+    <!--空页面显示提示的View-->
+    <item name="root_id" type="id" />
+    <declare-styleable name="StateView">
+        <attr name="emptyResource" format="reference" />
+        <attr name="retryResource" format="reference" />
+        <attr name="loadingResource" format="reference" />
+    </declare-styleable>
+</resources>

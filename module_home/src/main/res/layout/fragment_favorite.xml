@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.dinlive.din.baselib.wiget.stateview.StateView
+        android:id="@+id/StateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.dinlive.din.baselib.wiget.stateview.TipView
+        android:id="@+id/tip_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        app:tipBackgroundColor="#ffffff"
+        app:tipText="网络不可用"
+        app:tipTextColor="#ff0000"
+        app:tipTextSize="14sp" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePreviewInEditMode="true">
+
+        <com.dinlive.din.baselib.wiget.PowerfulRecyclerView
+            android:id="@+id/rv_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dividerColor="#ffd8d8d8"
+            app:dividerMarginLeft="15dp"
+            app:dividerMarginRight="15dp"
+            app:dividerSize="0.5dp" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

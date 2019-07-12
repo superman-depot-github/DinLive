@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dinlive.din.login" >
+
+    <application
+        android:allowBackup="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask" />
+    </application>
+</manifest>

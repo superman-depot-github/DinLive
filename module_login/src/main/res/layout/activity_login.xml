@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/vector_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector_back" />
+
+            <EditText
+                android:id="@+id/account"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="请输入用户名"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@android:color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector_back" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <!--<com.flyco.roundview.RoundTextView-->
+        <!--android:id="@+id/login"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginRight="100dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="登陆"-->
+        <!--android:textColor="@color/red"-->
+        <!--app:rv_backgroundColor="@color/white"-->
+        <!--app:rv_backgroundPressColor="@color/gray_3"-->
+        <!--app:rv_isRadiusHalfHeight="true"-->
+        <!--app:rv_isRippleEnable="false"-->
+        <!--app:rv_strokeColor="@color/red"-->
+        <!--app:rv_strokePressColor="@color/gray_3"-->
+        <!--app:rv_strokeWidth="1dp"-->
+        <!--app:rv_textPressColor="@color/white" />-->
+
+        <!--<com.flyco.roundview.RoundTextView-->
+        <!--android:id="@+id/register"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="注册新用户"-->
+        <!--android:textColor="@color/blue"-->
+        <!--android:textSize="12sp"-->
+        <!--app:rv_textPressColor="@color/blue_1" />-->
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="100dp"
+            android:gravity="center"
+            android:text="登陆" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="注册新用户"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>
