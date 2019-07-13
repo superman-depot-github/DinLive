@@ -26,5 +26,9 @@ public interface ARouterHub {
      */
     String LOGIN = "/module_login/";
     String LOGIN_ACTIVITY = LOGIN + "LoginActivity";
+    String LOGIN_ACCOUNTLOGIN_FRAGMENT = LOGIN + "AccountLoginFragment";
+    String LOGIN_PHONEQUICKLOGIN_FRAGMENT = LOGIN + "PhoneQuickLoginFragment";
+    String LOGIN_REGISTER_FRAGMENT = LOGIN + "RegisterFragment";
+    String LOGIN_BINDSEETING_FRAGMENT = LOGIN + "BindSeetingFragment";
 
 }

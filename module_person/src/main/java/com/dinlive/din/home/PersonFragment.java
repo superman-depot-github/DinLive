@@ -10,6 +10,8 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.dinlive.din.baselib.Base.BaseFragment;
 import com.dinlive.din.baselib.utils.ARouterHub;
+import com.dinlive.din.baselib.utils.ToastUtils;
+import com.dinlive.din.baselib.utils.UserLoginUtils;
 import com.dinlive.din.home.presenter.PFrg_Favorite;
 import com.dinlive.din.home.view.IVFrg_Favorite;
 import com.jeremyliao.liveeventbus.LiveEventBus;
@@ -57,11 +59,21 @@ public class PersonFragment extends BaseFragment<IVFrg_Favorite, PFrg_Favorite> 
     }
 
 
+    @OnClick({R2.id.tologin, R2.id.outlogin})
+    public void onViewClicked(View view) {
+        int i = view.getId();
+        if (i == R.id.tologin) {
+            if (UserLoginUtils.getUser() != null) {
+                ToastUtils.show("当前已经登陆");
+            } else {
+                ARouter.getInstance()
+                        .build(ARouterHub.LOGIN_ACTIVITY)
+                        .navigation(getActivity());
+            }
+        } else if (i == R.id.outlogin) {
 
-    @OnClick(R2.id.tologin)
-    public void onViewClicked() {
-        ARouter.getInstance()
-                .build(ARouterHub.LOGIN_ACTIVITY)
-                .navigation(getActivity());
+        } else {
+
+        }
     }
 }

@@ -11,22 +11,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.dinlive.din.baselib.R2;
+import com.dinlive.din.baselib.R;
 import com.dinlive.din.baselib.wiget.stateview.StateView;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import me.jessyan.autosize.internal.CustomAdapt;
 
 public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupportFragment implements CustomAdapt, IBaseView {
-    @BindView(R2.id.toolbar)
     Toolbar toolbar;
-    @BindView(R2.id.bar_title)
     TextView mBarTitle;
-    @BindView(R2.id.bar_right)
     TextView mBarRight;
 
     protected RxAppCompatActivity mActivity;
@@ -79,12 +75,19 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupp
      * 初始化ToolBar
      */
     private void initToolBar() {
+        toolbar = mRootView.findViewById(R.id.toolbar);
+        mBarTitle = mRootView.findViewById(R.id.bar_title);
+        mBarRight = mRootView.findViewById(R.id.bar_right);
         //判断是否有Toolbar,并默认显示返回按钮
         if (null != toolbar) {
             toolbar.setNavigationOnClickListener(v -> {
-                getActivity().finish();
+                setNavigationOnClickListener();
             });
         }
+    }
+
+    public void setNavigationOnClickListener() {
+        getActivity().finish();
     }
 
     @Override
