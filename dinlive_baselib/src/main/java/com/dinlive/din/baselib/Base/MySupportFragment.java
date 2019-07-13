@@ -8,8 +8,6 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.animation.Animation;
 
-import com.trello.rxlifecycle2.components.support.RxFragment;
-
 import me.yokeyword.fragmentation.ExtraTransaction;
 import me.yokeyword.fragmentation.ISupportFragment;
 import me.yokeyword.fragmentation.SupportFragmentDelegate;
@@ -20,7 +18,7 @@ import me.yokeyword.fragmentation.anim.FragmentAnimator;
  * 展示自定制的MySupportFragment，不继承SupportFragment
  * Created by YoKey on 17/6/24.
  */
-public class MySupportFragment extends RxFragment implements ISupportFragment {
+public class MySupportFragment extends LazyLoadFragment implements ISupportFragment {
     final SupportFragmentDelegate mDelegate = new SupportFragmentDelegate(this);
     protected FragmentActivity _mActivity;
 

@@ -108,4 +108,6 @@ dependencies {
 
     //BRVAH RecyclerAdapter框架（万能适配器） https://github.com/CymChad/BaseRecyclerViewAdapterHelper
     api "com.github.CymChad:BaseRecyclerViewAdapterHelper:$BaseRecyclerViewAdapterHelper"
+
+    api 'cn.jzvd:jiaozivideoplayer:6.2.12'
 }

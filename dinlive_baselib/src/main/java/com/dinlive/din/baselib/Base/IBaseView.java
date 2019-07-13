@@ -10,6 +10,9 @@ import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
  */
 
 public interface IBaseView extends OnRefreshListener, OnLoadMoreListener {
+    public static final int FIRSTLOAD = 0;
+    public static final int LOADMORER = 1;
+    public static final int REFRENSH = -1;
 
     void gotoAct(Intent intent);
 
