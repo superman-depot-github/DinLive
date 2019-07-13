@@ -52,5 +52,6 @@ ext {
     qmui = '1.2.0'
     jsbridge = '1.0.4'
     LiveEventBus = '1.4.4'
+    BaseRecyclerViewAdapterHelper = '2.9.30'
 
 }

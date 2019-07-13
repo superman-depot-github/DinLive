@@ -13,7 +13,7 @@ public interface ARouterHub {
      * home模块
      */
     String HOME = "/module_home/";
-    String HOME_FRAGMENT = HOME + "FavoriteFragment";
+    String HOME_FRAGMENT_HOME = HOME + "Fragment_home";
 
     /**
      * person模块

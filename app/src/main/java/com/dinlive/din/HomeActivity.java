@@ -47,8 +47,8 @@ public class HomeActivity extends BaseActivity<IVAct_Home, PAct_Home> implements
     @Override
     protected void initView() {
         //设置StatusBar 显示模式(黑色或者白色)
-        fragments.add((Fragment) ARouter.getInstance().build(ARouterHub.HOME_FRAGMENT).navigation());
-        fragments.add((Fragment) ARouter.getInstance().build(ARouterHub.HOME_FRAGMENT).navigation());
+        fragments.add((Fragment) ARouter.getInstance().build(ARouterHub.HOME_FRAGMENT_HOME).navigation());
+        fragments.add((Fragment) ARouter.getInstance().build(ARouterHub.HOME_FRAGMENT_HOME).navigation());
         fragments.add((Fragment) ARouter.getInstance().build(ARouterHub.PERSON_FRAGMENT).navigation());
         itemIcon.add(new BotBean("首页", R.drawable.normal_home, R.drawable.select_home));
         itemIcon.add(new BotBean("收藏", R.drawable.normal_favorite, R.drawable.select_favorite));

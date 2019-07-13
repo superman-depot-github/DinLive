@@ -10,6 +10,8 @@ import com.dinlive.din.login.presenter.PAct_Login;
 import com.dinlive.din.login.view.IVAct_Login;
 
 import butterknife.BindView;
+import me.yokeyword.fragmentation.anim.DefaultHorizontalAnimator;
+import me.yokeyword.fragmentation.anim.FragmentAnimator;
 
 @Route(path = ARouterHub.LOGIN_ACTIVITY, name = "登陆接界面")
 public class LoginActivity extends BaseActivity<IVAct_Login, PAct_Login> implements IVAct_Login {
@@ -39,5 +41,12 @@ public class LoginActivity extends BaseActivity<IVAct_Login, PAct_Login> impleme
     @Override
     protected void initData() {
 
+    }
+
+    @Override
+    public FragmentAnimator onCreateFragmentAnimator() {
+        //setFragmentAnimator(new DefaultVerticalAnimator());//默认fragment转场动画   从下到上
+        //setFragmentAnimator(new DefaultNoAnimator());//默认fragment转场动画  快闪
+        return new DefaultHorizontalAnimator();//默认fragment转场动画  从左到右
     }
 }

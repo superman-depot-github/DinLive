@@ -10,15 +10,15 @@ import com.dinlive.din.baselib.utils.ToastUtils;
 import com.dinlive.din.baselib.wiget.PowerfulRecyclerView;
 import com.dinlive.din.baselib.wiget.stateview.StateView;
 import com.dinlive.din.baselib.wiget.stateview.TipView;
-import com.dinlive.din.home.presenter.PFrg_Favorite;
-import com.dinlive.din.home.view.IVFrg_Favorite;
+import com.dinlive.din.home.presenter.PFrg_Home;
+import com.dinlive.din.home.view.IVFrg_Home;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 
 import butterknife.BindView;
 
-@Route(path = ARouterHub.HOME_FRAGMENT, name = "收藏")
-public class FavoriteFragment extends BaseFragment<IVFrg_Favorite, PFrg_Favorite> implements IVFrg_Favorite {
+@Route(path = ARouterHub.HOME_FRAGMENT_HOME, name = "首页")
+public class Fragment_home extends BaseFragment<IVFrg_Home, PFrg_Home> implements IVFrg_Home {
     @BindView(R2.id.tip_view)
     TipView mTipView;
     @BindView(R2.id.refreshLayout)
@@ -33,8 +33,8 @@ public class FavoriteFragment extends BaseFragment<IVFrg_Favorite, PFrg_Favorite
     }
 
     @Override
-    protected PFrg_Favorite createPresenter() {
-        return new PFrg_Favorite();
+    protected PFrg_Home createPresenter() {
+        return new PFrg_Home();
     }
 
     @Override
