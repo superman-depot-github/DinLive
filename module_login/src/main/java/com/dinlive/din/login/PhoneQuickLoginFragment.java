@@ -1,7 +1,5 @@
 package com.dinlive.din.login;
 
-import android.os.Handler;
-import android.os.Message;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -18,11 +16,13 @@ import com.dinlive.din.login.presenter.PFrg_PhoneQuickLogin;
 import com.dinlive.din.login.view.IVFrg_PhoneQuickLogin;
 import com.flyco.roundview.RoundTextView;
 
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.observers.DisposableObserver;
 
 @Route(path = ARouterHub.LOGIN_PHONEQUICKLOGIN_FRAGMENT, name = "短信快速登陆")
 public class PhoneQuickLoginFragment extends BaseFragment<IVFrg_PhoneQuickLogin, PFrg_PhoneQuickLogin> implements IVFrg_PhoneQuickLogin {
@@ -39,48 +39,6 @@ public class PhoneQuickLoginFragment extends BaseFragment<IVFrg_PhoneQuickLogin,
     @BindView(R2.id.getcode)
     TextView getcode;
 
-    private Timer timer;
-    private TimerTask timerTask;
-    private int DEFAULT_SECOND = 60; // 获取验证码倒计时开始时间
-    private int second = DEFAULT_SECOND;
-    Handler handler = new Handler() {
-
-        public void handleMessage(Message msg) {
-            if (msg.what == 0) {
-                if (second > 0) {
-                    second--;
-                    getcode.setTextColor(getResources().getColor(R.color.gray));
-                    getcode.setText(second + "秒");
-                    getcode.setClickable(false);
-                } else {
-                    if (timer != null) {
-                        timer.cancel();
-                        timer = null;
-                    }
-                    if (timerTask != null) {
-                        timerTask = null;
-                    }
-                    second = DEFAULT_SECOND;
-
-                    getcode.setClickable(true);
-                    getcode.setTextColor(getResources().getColor(R.color.red));
-                    getcode.setText("获取验证码");
-                }
-            } else if (msg.what == 1) {
-                if (timer != null) {
-                    timer.cancel();
-                    timer = null;
-                }
-                if (timerTask != null) {
-                    timerTask = null;
-                }
-                second = DEFAULT_SECOND;
-                getcode.setTextColor(getResources().getColor(R.color.red));
-                getcode.setClickable(true);
-                getcode.setText("获取验证码");
-            }
-        }
-    };
 
     public static PhoneQuickLoginFragment newInstance() {
         return (PhoneQuickLoginFragment) ARouter.getInstance()
@@ -159,36 +117,42 @@ public class PhoneQuickLoginFragment extends BaseFragment<IVFrg_PhoneQuickLogin,
         }
     }
 
-    @Override
-    public void onDestroy() {
-        if (timer != null) {
-            timer.cancel();
-            timer = null;
-        }
-        if (timerTask != null) {
-            timerTask = null;
-        }
-        super.onDestroy();
-    }
-
-    @Override
-    public void RefrenshCode() {
-        smgcode.setClickable(false);
-        timerTask = new TimerTask() {
-            @Override
-            public void run() {
-                Message msg = new Message();
-                msg.what = 0;
-                handler.sendMessage(msg);
-            }
-        };
-        timer = new Timer();
-        timer.schedule(timerTask, 0, 1000);
-    }
 
     public void setNavigationOnClickListener() {
         pop();
     }
+
+    @Override
+    public void RefrenshCode() {
+        Observable.interval(1, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
+                .take(60)
+                .compose(PhoneQuickLoginFragment.this.bindToLifecycle())
+                .subscribeOn(AndroidSchedulers.mainThread())
+                .subscribe(new DisposableObserver<Long>() {
+
+                    @Override
+                    public void onNext(Long aLong) {
+                        getcode.setTextColor(getResources().getColor(R.color.gray));
+                        getcode.setText(aLong + "秒");
+                        getcode.setClickable(false);
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        getcode.setTextColor(getResources().getColor(R.color.red));
+                        getcode.setClickable(true);
+                        getcode.setText("获取验证码");
+                    }
+                });
+
+    }
+
+
 
     @Override
     public void checkSmsloginSuccess(String mobile, String sms_code, User user) {
