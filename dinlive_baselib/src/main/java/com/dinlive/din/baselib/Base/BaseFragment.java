@@ -15,14 +15,13 @@ import com.dinlive.din.baselib.R2;
 import com.dinlive.din.baselib.wiget.stateview.StateView;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
-import com.trello.rxlifecycle2.components.support.RxFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import me.jessyan.autosize.internal.CustomAdapt;
 
-public abstract class BaseFragment<V, P extends BasePresenter<V>> extends RxFragment implements CustomAdapt, IBaseView {
+public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupportFragment implements CustomAdapt, IBaseView {
     @BindView(R2.id.toolbar)
     Toolbar toolbar;
     @BindView(R2.id.bar_title)

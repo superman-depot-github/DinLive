@@ -94,4 +94,16 @@ dependencies {
     api "com.github.lzyzsd:jsbridge:$jsbridge"
     //LiveEventBus消息通信 https://github.com/JeremyLiao/LiveEventBus
     api "com.jeremyliao:live-event-bus:$LiveEventBus"
+
+    //加载dialog
+    implementation 'com.github.gittjy:LoadingDialog:1.0.2'
+
+    //我喜欢的Toast https://github.com/bboylin/UniversalToast
+    api 'com.github.bboylin:UniversalToast:v1.0.9'
+    api 'com.facebook.fresco:fresco:1.10.0'// 请添加上fresco的依赖，可以把fresco版本替换成最新的
+    api 'com.facebook.fresco:animated-gif:1.10.0'
+
+
+    //Fragmentation管理fragment任务找 https://github.com/YoKeyword/Fragmentation/blob/master/README_CN.md
+    api 'me.yokeyword:fragmentation:1.3.7'
 }

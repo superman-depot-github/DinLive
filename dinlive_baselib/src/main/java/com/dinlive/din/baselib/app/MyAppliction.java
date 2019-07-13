@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.dinlive.din.baselib.BuildConfig;
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.DefaultRefreshFooterCreator;
 import com.scwang.smartrefresh.layout.api.DefaultRefreshHeaderCreator;
@@ -25,6 +26,7 @@ public class MyAppliction extends Application {
     public void onCreate() {
         super.onCreate();
         context = getApplicationContext();
+        Fresco.initialize(this);//三方Toast使用
         initRefrenshLayout();
         if (BuildConfig.DEBUG) {           // 这两行必须写在init之前，否则这些配置在init过程中将无效
             ARouter.openLog();     // 打印日志

@@ -5,20 +5,24 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.blankj.utilcode.util.BarUtils;
 import com.dinlive.din.baselib.R;
+import com.dinlive.din.baselib.event.EventTags;
+import com.dinlive.din.baselib.net.rxjava.converter.ResultException;
 import com.dinlive.din.baselib.utils.ActTaskUtil;
+import com.jeremyliao.liveeventbus.LiveEventBus;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
-import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import me.jessyan.autosize.internal.CustomAdapt;
+import xyz.bboylin.universialtoast.UniversalToast;
 
-public abstract class BaseActivity<V, P extends BasePresenter<V>> extends RxAppCompatActivity implements CustomAdapt, IBaseView {
+public abstract class BaseActivity<V, P extends BasePresenter<V>> extends MySupportActivity implements CustomAdapt, IBaseView {
     Toolbar toolbar;
     TextView mBarTitle;
     TextView mBarRight;
@@ -43,6 +47,8 @@ public abstract class BaseActivity<V, P extends BasePresenter<V>> extends RxAppC
         initView();
         initListener();
         initData();
+
+        initNetEceptionListener();
     }
 
     protected abstract int getLayoutId();
@@ -54,6 +60,26 @@ public abstract class BaseActivity<V, P extends BasePresenter<V>> extends RxAppC
     protected abstract void initListener();
 
     protected abstract void initData();
+
+    protected void initNetEceptionListener() {
+        LiveEventBus.get()
+                .with(EventTags.NET_EXCEPTION, ResultException.class)
+                .observe(this, e -> {
+                    switch (e.getCode()) {
+                        case 3://需要从新登陆
+                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT,
+                                    UniversalToast.EMPHASIZE).showWarning();
+                            break;
+                        case 4://需要完善用户信息
+                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT).setGravity(Gravity.BOTTOM, 0, 50).showWarning();
+                            break;
+
+                        default:
+                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT).setGravity(Gravity.BOTTOM, 0, 50).showWarning();
+                            break;
+                    }
+                });
+    }
 
     @Override
     public void gotoAct(Intent intent) {
