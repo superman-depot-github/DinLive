@@ -39,7 +39,7 @@ public class Fragment_home extends BaseFragment<IVFrg_Home, PFrg_Home> implement
     protected BaseQuickAdapter mNewsAdapter;
 
     protected int getLayoutId() {
-        return R.layout.fragment_favorite;
+        return R.layout.fragment_home;
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Fragment_home extends BaseFragment<IVFrg_Home, PFrg_Home> implement
 
     @Override
     protected void initView(View v) {
-
+        centerTitle.setText("首页");
     }
 
     @Override
@@ -96,6 +96,7 @@ public class Fragment_home extends BaseFragment<IVFrg_Home, PFrg_Home> implement
     public void recommendListSuccess(int loadType, NewsDetailedBean newsDetailedBean) {
         mNewsList.addAll(newsDetailedBean.getArticle_list());
         mNewsAdapter.notifyDataSetChanged();
+        mNewsAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);//条目加载动画
         hasMore = newsDetailedBean.getMore() == 0 ? false : true;
         start = newsDetailedBean.getStart();
         changeSmartRefreshLayout(loadType, true, hasMore);

@@ -58,7 +58,7 @@ public class PhoneQuickLoginFragment extends BaseFragment<IVFrg_PhoneQuickLogin,
 
     @Override
     protected void initView(View mRootView) {
-
+        toolbar.setNavigationIcon(R.drawable.vector_back);
     }
 
     @Override

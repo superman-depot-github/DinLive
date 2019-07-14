@@ -21,9 +21,9 @@ import butterknife.Unbinder;
 import me.jessyan.autosize.internal.CustomAdapt;
 
 public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupportFragment implements CustomAdapt, IBaseView {
-    Toolbar toolbar;
-    TextView mBarTitle;
-    TextView mBarRight;
+    public Toolbar toolbar;
+    public TextView centerTitle;
+    public TextView RightTitle;
 
     protected RxAppCompatActivity mActivity;
     protected View mRootView;
@@ -76,8 +76,8 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupp
      */
     private void initToolBar() {
         toolbar = mRootView.findViewById(R.id.toolbar);
-        mBarTitle = mRootView.findViewById(R.id.bar_title);
-        mBarRight = mRootView.findViewById(R.id.bar_right);
+        centerTitle = mRootView.findViewById(R.id.bar_title);
+        RightTitle = mRootView.findViewById(R.id.bar_right);
         //判断是否有Toolbar,并默认显示返回按钮
         if (null != toolbar) {
             toolbar.setNavigationOnClickListener(v -> {

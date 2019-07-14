@@ -57,7 +57,7 @@ public class RegisterFragment extends BaseFragment<IVFrg_Register, PFrg_Register
 
     @Override
     protected void initView(View mRootView) {
-
+        toolbar.setNavigationIcon(R.drawable.vector_back);
     }
 
     @Override

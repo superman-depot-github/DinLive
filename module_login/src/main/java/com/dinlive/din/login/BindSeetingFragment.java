@@ -66,7 +66,7 @@ public class BindSeetingFragment extends BaseFragment<IVFrg_BindSeeting, PFrg_Bi
 
     @Override
     protected void initView(View mRootView) {
-
+        toolbar.setNavigationIcon(R.drawable.vector_back);
     }
 
     @Override

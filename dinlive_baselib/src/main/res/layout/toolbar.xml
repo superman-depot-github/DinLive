@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     android:theme="@style/ToolBarTheme"
-    app:navigationIcon="@drawable/vector_back">
+    tools:navigationIcon="@drawable/vector_back">
 
     <TextView
         android:id="@+id/bar_title"

@@ -52,7 +52,7 @@ public class AccountLoginFragment extends BaseFragment<IVFrg_AccountLogin, PFrg_
 
     @Override
     protected void initView(View mRootView) {
-
+        toolbar.setNavigationIcon(R.drawable.vector_back);
     }
 
     @Override
