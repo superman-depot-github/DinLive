@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.blankj.utilcode.util.SizeUtils;
+
 
 // 图标 + 文字的 底部按钮
 public class TabView extends LinearLayout {
@@ -29,7 +31,7 @@ public class TabView extends LinearLayout {
 
         // 添加小图标
         iconImage = new ImageView(getContext());
-        LayoutParams layoutParams = new LayoutParams(50,50);// 定义布局的宽高
+        LayoutParams layoutParams = new LayoutParams(SizeUtils.dp2px(25),SizeUtils.dp2px(25));// 定义布局的宽高
         iconImage.setLayoutParams(layoutParams);// 设置图标的大小
         iconImage.setImageResource(botBean.getUnCheckedIcon());// 获取图片
 

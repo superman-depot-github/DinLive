@@ -4,16 +4,17 @@ package com.dinlive.din.home;
 import android.arch.lifecycle.Observer;
 import android.support.annotation.Nullable;
 import android.view.View;
-import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.dinlive.din.baselib.Base.BaseFragment;
 import com.dinlive.din.baselib.utils.ARouterHub;
+import com.dinlive.din.baselib.utils.DialogUtil;
 import com.dinlive.din.baselib.utils.ToastUtils;
 import com.dinlive.din.baselib.utils.UserLoginUtils;
 import com.dinlive.din.home.presenter.PFrg_Favorite;
 import com.dinlive.din.home.view.IVFrg_Favorite;
+import com.flyco.roundview.RoundTextView;
 import com.jeremyliao.liveeventbus.LiveEventBus;
 
 import butterknife.BindView;
@@ -24,8 +25,8 @@ import butterknife.OnClick;
 @Route(path = ARouterHub.PERSON_FRAGMENT, name = "个人")
 public class PersonFragment extends BaseFragment<IVFrg_Favorite, PFrg_Favorite> {
 
-    @BindView(R2.id.tologin)
-    TextView tologin;
+    @BindView(R2.id.login)
+    RoundTextView tologin;
 
     protected int getLayoutId() {
         return R.layout.fragment_person;
@@ -59,10 +60,10 @@ public class PersonFragment extends BaseFragment<IVFrg_Favorite, PFrg_Favorite> 
     }
 
 
-    @OnClick({R2.id.tologin, R2.id.outlogin})
+    @OnClick({R2.id.login, R2.id.userIcon})
     public void onViewClicked(View view) {
         int i = view.getId();
-        if (i == R.id.tologin) {
+        if (i == R.id.login || i == R.id.login) {
             if (UserLoginUtils.getUser() != null) {
                 ToastUtils.show("当前已经登陆");
             } else {
@@ -70,10 +71,8 @@ public class PersonFragment extends BaseFragment<IVFrg_Favorite, PFrg_Favorite> 
                         .build(ARouterHub.LOGIN_ACTIVITY)
                         .navigation(getActivity());
             }
-        } else if (i == R.id.outlogin) {
-
-        } else {
-
+        } else if (i == R.id.userIcon) {
+            DialogUtil.showWarningDialog(getContext(), "驾驶员，你所输入的身份证号系统没有找到任何注册信息，请输入你本人手机号通过手机验证登陆，谢谢～").show();
         }
     }
 }

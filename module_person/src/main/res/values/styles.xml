@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="my_common_item_style">
+        <item name="android:padding">10dp</item>
+        <item name="android:drawableRight">@drawable/vector_into</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#282B2E</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+</resources>

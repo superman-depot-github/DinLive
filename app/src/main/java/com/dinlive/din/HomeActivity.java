@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.FrameLayout;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.blankj.utilcode.util.ToastUtils;
 import com.dinlive.din.baselib.Base.BaseActivity;
 import com.dinlive.din.baselib.utils.ARouterHub;
 import com.dinlive.din.baselib.wiget.NoScrollViewPager;
@@ -85,6 +86,18 @@ public class HomeActivity extends BaseActivity<IVAct_Home, PAct_Home> implements
         @Override
         public int getCount() {
             return fragments.size();
+        }
+    }
+
+    private long lastTime = 0L;
+    @Override
+    public void onBackPressedSupport() {
+        long currentTime = System.currentTimeMillis();
+        if (currentTime - lastTime < 2000) {
+            super.onBackPressedSupport();
+        } else {
+            ToastUtils.showShort("再按一次退出");
+            lastTime = currentTime;
         }
     }
 }

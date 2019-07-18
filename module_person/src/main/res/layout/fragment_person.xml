@@ -1,28 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tologin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:text="登陆" />
-
-
-    <TextView
-        android:id="@+id/outlogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tologin"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="100dp"
-        android:gravity="center"
-        android:text="推出登录" />
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:background="#ff000000"
+            android:gravity="center"
+            android:orientation="vertical">
 
 
-</RelativeLayout>
+            <com.shehuan.niv.NiceImageView
+                android:id="@+id/userIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/vector_password"
+                app:is_circle="true" />
+
+            <TextView
+                android:id="@+id/textHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="未登录"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#fff4f4f4" />
+
+        <com.flyco.roundview.RoundTextView
+            style="@style/my_common_item_style"
+            android:drawableLeft="@drawable/vector_absorbed"
+            android:drawablePadding="10dp"
+            android:text="报名资料"
+            app:rv_backgroundColor="@color/white"
+            app:rv_backgroundPressColor="#fff4f4f4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffd6d8da" />
+
+        <com.flyco.roundview.RoundTextView
+            style="@style/my_common_item_style"
+            android:drawableLeft="@drawable/vector_notice"
+            android:drawablePadding="10dp"
+            android:text="报名资料"
+            app:rv_backgroundColor="@color/white"
+            app:rv_backgroundPressColor="#fff4f4f4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffd6d8da" />
+
+        <com.flyco.roundview.RoundTextView
+            style="@style/my_common_item_style"
+            android:drawableLeft="@drawable/vector_seting"
+            android:drawablePadding="10dp"
+            android:text="报名资料"
+            app:rv_backgroundColor="@color/white"
+            app:rv_backgroundPressColor="#fff4f4f4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#fff4f4f4" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/white"
+            app:rv_backgroundColor="#000000"
+            app:rv_backgroundPressColor="@color/gray_3"
+            app:rv_isRadiusHalfHeight="true"
+            app:rv_isRippleEnable="false"
+            app:rv_strokeColor="#000000"
+            app:rv_strokePressColor="@color/gray_3"
+            app:rv_strokeWidth="1dp"
+            app:rv_textPressColor="@color/white" />
+    </LinearLayout>
+</FrameLayout>

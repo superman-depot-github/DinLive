@@ -18,9 +18,9 @@ public class OkHttpHelper {
 
     static {
         Interceptor logInterceptor;
-        if (BuildConfig.DEBUG){
+        if (BuildConfig.IS_DEBUG) {
             logInterceptor = new HttpLoggingInterceptor(new HttpLog()).setLevel(HttpLoggingInterceptor.Level.BODY);
-        }else {
+        } else {
             logInterceptor = new HttpLoggingInterceptor(new HttpLog()).setLevel(HttpLoggingInterceptor.Level.BODY);
         }
         okHttpClient = new OkHttpClient()
@@ -35,7 +35,9 @@ public class OkHttpHelper {
     public static class HttpLog implements HttpLoggingInterceptor.Logger {
         @Override
         public void log(String message) {
-            LogUtil.d(message);
+            if (BuildConfig.IS_DEBUG) {
+                LogUtil.d(message);
+            }
         }
     }
 

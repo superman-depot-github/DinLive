@@ -1,5 +1,6 @@
 package com.dinlive.din.baselib.utils;
 
+import com.blankj.utilcode.util.SPStaticUtils;
 import com.dinlive.din.baselib.model.User;
 import com.google.gson.Gson;
 
@@ -8,7 +9,7 @@ import com.google.gson.Gson;
  */
 public class UserLoginUtils {
     public static User getUser() {
-        String userInfoStr = PreUtils.getString("UserInfo", "");
+        String userInfoStr = SPStaticUtils.getString("UserInfo", "");
         if (userInfoStr.isEmpty()){
             return null;
         }
@@ -17,10 +18,10 @@ public class UserLoginUtils {
     }
 
     public static void upDateUser(User user) {
-        PreUtils.putString("UserInfo", new Gson().toJson(user));
+        SPStaticUtils.put("UserInfo", new Gson().toJson(user));
     }
 
     public static void cleanUser() {
-        PreUtils.clear();
+        SPStaticUtils.clear();
     }
 }

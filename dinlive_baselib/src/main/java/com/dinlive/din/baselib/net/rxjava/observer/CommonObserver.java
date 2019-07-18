@@ -43,6 +43,7 @@ public abstract class CommonObserver<D> implements Observer<HttpRespResult<D>> {
             resultException = new ResultException(-4, "数据解析错误");
         } else if (e instanceof ConnectException || e instanceof SocketTimeoutException || e instanceof UnknownHostException) {
             resultException = new ResultException(-3, "网络连接失败");
+
         } else if (e instanceof javax.net.ssl.SSLHandshakeException) {
             resultException = new ResultException(-2, "证书验证失败");
         } else {

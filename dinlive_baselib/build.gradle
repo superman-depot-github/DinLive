@@ -16,6 +16,8 @@ android {
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
             }
         }
+
+        buildConfigField "boolean", "IS_DEBUG", IS_DEBUG
     }
 
     buildTypes {

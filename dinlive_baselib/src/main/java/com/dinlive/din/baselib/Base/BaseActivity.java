@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.blankj.utilcode.util.BarUtils;
+import com.blankj.utilcode.util.SizeUtils;
 import com.dinlive.din.baselib.R;
 import com.dinlive.din.baselib.event.EventTags;
 import com.dinlive.din.baselib.net.rxjava.converter.ResultException;
@@ -71,11 +72,22 @@ public abstract class BaseActivity<V, P extends BasePresenter<V>> extends MySupp
                                     UniversalToast.EMPHASIZE).showWarning();
                             break;
                         case 4://需要完善用户信息
-                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT).setGravity(Gravity.BOTTOM, 0, 50).showWarning();
+                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT).setGravity(Gravity.BOTTOM, 0, SizeUtils.dp2px(60)).showWarning();
                             break;
+//                        case -5://无网络链接
+//                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT, UniversalToast.CLICKABLE)
+//                                    .setGravity(Gravity.BOTTOM, 0, SizeUtils.dp2px(60))
+//                                    .setClickCallback("设置网络", new View.OnClickListener() {
+//                                        @Override
+//                                        public void onClick(View view) {
+//                                            NetworkUtils.openWirelessSettings();
+//                                        }
+//                                    })
+//                                    .showError();
+//                            break;
 
                         default:
-                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT).setGravity(Gravity.BOTTOM, 0, 50).showWarning();
+                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT).setGravity(Gravity.BOTTOM, 0, SizeUtils.dp2px(60)).showWarning();
                             break;
                     }
                 });
