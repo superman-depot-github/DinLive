@@ -1,5 +1,41 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.jakewharton.butterknife'
+
+
+apply plugin: 'maven'
+// 将项目指定的 _exports 文件夹下的内容打成 jar
+//task makeJar(type: Jar) {
+//    baseName = "hpauth-exports"
+//    version = "1.0.0"
+//    extension = "jar"
+//    from('build/intermediates/classes/debug/')
+//    from('build/tmp/kotlin-classes/debug/')
+//    include('com/homeprint/module/auth/_exports/**')
+//    destinationDir = file('build/_exports')
+//}
+//
+//// 配置需要上传到 maven 仓库的文件，即将上面打包的 jar 上传
+//artifacts {
+//    archives makeJar
+//}
+uploadArchives {
+    configuration = configurations.archives
+    repositories {
+        mavenDeployer {
+            // 仓库路径（只能是hosted仓库）
+            repository(url: 'http://http://127.0.0.1:8081//repository/com.dinlive.din/') {
+                // 你 Nexus 的账户密码
+                authentication(userName: 'admin', password: 'admin123')
+            }
+            pom.project {
+                version '1.0.1'
+                artifactId 'com.dinlive.din'
+                groupId 'mainlib'
+                //description 'xxxxxx'
+            }
+        }
+    }
+}
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
