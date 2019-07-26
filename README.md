@@ -19,6 +19,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 圆角、圆形的ImageView：[NiceImageView](https://github.com/SheHuan/NiceImageView)
 - 布局控件：[FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
 - 安卓工具类库：[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode)
+- 无需注册的EventBus：[LiveEventBus](https://github.com/JeremyLiao/LiveEventBus)
 
 ## 工程目录
 - app -> 壳模块  
