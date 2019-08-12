@@ -51,6 +51,7 @@ public abstract class CommonObserver<D> implements Observer<HttpRespResult<D>> {
         }
         LiveEventBus.get().with(EventTags.NET_EXCEPTION).post(resultException);
         onError(resultException);
+        e.printStackTrace();
     }
 
     @Override

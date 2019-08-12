@@ -1,8 +1,9 @@
 package com.dinlive.din.baselib.net.retrofit;
 
 
+import com.dinlive.din.baselib.BuildConfig;
 import com.dinlive.din.baselib.net.okhttp.OkHttpHelper;
-import com.dinlive.din.baselib.net.rxjava.converter.CustomGsonConverterFactory;
+import com.dinlive.din.baselib.net.rxjava.converter.ResponseConverterFactory;
 import com.dinlive.din.baselib.net.service.ApiService;
 
 import retrofit2.Retrofit;
@@ -17,9 +18,9 @@ public class RetrofitHelper {
     static {
         retrofit = new Retrofit
                 .Builder()
-                .baseUrl(ApiService.BASEURL_TEXT)
-                //.addConverterFactory(ResponseConverterFactory.create())
-                .addConverterFactory(CustomGsonConverterFactory.create())
+                .baseUrl(BuildConfig.IS_DEBUG==true?ApiService.BASEURL_DEBUG:ApiService.BASEURL_DEV)
+                .addConverterFactory(ResponseConverterFactory.create())
+//                .addConverterFactory(CustomGsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(OkHttpHelper.getOkHttpClient())
                 .build();

@@ -9,19 +9,19 @@ import java.util.Map;
  * Created by superman on 2019/6/28.
  */
 public class ParmsUtils {
-    private static String SHA1_KEY = "K;9)Bq|ScMF1h=Vp5uA-G87d(_fi[aP,.w^{vQ:W";
+//    private static String SHA1_KEY = "K;9)Bq|ScMF1h=Vp5uA-G87d(_fi[aP,.w^{vQ:W";
 
     public static Map<String, String> getParmsMap() {
         Map<String, String> map = new HashMap();
-        String nonce = String.valueOf((int) ((Math.random() * 9 + 1) * 100000));
-        String timestamp = String.valueOf(System.currentTimeMillis() / 1000);
-        try {
-            map.put("signature", getSHA1(SHA1_KEY, timestamp, nonce));
-            map.put("timestamp", timestamp);
-            map.put("nonce", nonce);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        String nonce = String.valueOf((int) ((Math.random() * 9 + 1) * 100000));
+//        String timestamp = String.valueOf(System.currentTimeMillis() / 1000);
+//        try {
+//            map.put("signature", getSHA1(SHA1_KEY, timestamp, nonce));
+//            map.put("timestamp", timestamp);
+//            map.put("nonce", nonce);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
         return map;
     }
 

@@ -10,6 +10,7 @@ import com.dinlive.din.baselib.net.rxjava.observable.TransformerHelper;
 import com.dinlive.din.baselib.net.rxjava.observer.CommonObserver;
 import com.dinlive.din.baselib.net.service.ParmsUtils;
 import com.dinlive.din.baselib.net.service.ServiceManager;
+import com.dinlive.din.baselib.utils.ToastUtils;
 import com.dinlive.din.login.AccountLoginFragment;
 import com.dinlive.din.login.view.IVFrg_AccountLogin;
 
@@ -27,7 +28,6 @@ public class PFrg_AccountLogin extends BasePresenter<IVFrg_AccountLogin> {
         Map<String, String> map = ParmsUtils.getParmsMap();
         map.put("username", accountStr);
         map.put("password", passwordtStr);
-        map.put("from", "android");
         ServiceManager
                 .getApiService()
                 .login(map)
@@ -38,7 +38,8 @@ public class PFrg_AccountLogin extends BasePresenter<IVFrg_AccountLogin> {
 
                     @Override
                     protected void onSuccess(User user) {
-                        getView().loginSuccess(user);
+                       // getView().loginSuccess(user);
+                        ToastUtils.show("");
                     }
 
                     @Override

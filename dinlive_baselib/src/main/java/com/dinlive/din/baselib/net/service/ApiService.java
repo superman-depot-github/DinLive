@@ -25,13 +25,12 @@ import retrofit2.http.QueryMap;
  * Created by superman on 2019/6/28.
  */
 public interface ApiService {
-    String BASEURL_TEXT = "http://www.seetaoism.com/";
-//    String BASEURL_TEXT = "http://test.cmsino.com/";
-
+    String BASEURL_DEBUG = "http://192.168.1.5:8080/";
+    String BASEURL_DEV = "http://test.cmsino.com/";
     @FormUrlEncoded
-    @POST("api/user/login")
-    //@Headers("Content-Type:application/json;charset=utf-8")
-    @Headers("Content-Type:application/x-www-form-urlencoded; charset=utf-8")
+    @POST("login")
+    @Headers("Content-Type:application/json;charset=utf-8")
+//    @Headers("Content-Type:application/x-www-form-urlencoded; charset=utf-8")
     Observable<HttpRespResult<User>> login(@FieldMap Map<String, String> map);
 
     @FormUrlEncoded
