@@ -1,26 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.jakewharton.butterknife'
-
-
-apply plugin: 'maven'
-uploadArchives {
-    configuration = configurations.archives
-    repositories {
-        mavenDeployer {
-            // 仓库路径（只能是hosted仓库）
-            repository(url: 'http://http://127.0.0.1:8081//repository/com.dinlive.din/') {
-                // 你 Nexus 的账户密码
-                authentication(userName: 'admin', password: 'admin123')
-            }
-            pom.project {
-                version '1.0.1'
-                artifactId 'com.dinlive.din'
-                groupId 'mainlib'
-                //description 'xxxxxx'
-            }
-        }
-    }
-}
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
@@ -66,4 +45,6 @@ dependencies {
     implementation project(':dinlive_baselib')
     annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife"
     annotationProcessor "com.alibaba:arouter-compiler:$arouter_compiler"
+
+    implementation 'com.dinlive.textlib:textlib:1.0.0'
 }
