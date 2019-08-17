@@ -1,1 +1,1 @@
-include ':app', ':module_person', ':dinlive_baselib', ':module_home', ':module_login', ':textlib'
+include ':app', ':module_person', ':dinlive_baselib', ':module_home', ':module_login'
