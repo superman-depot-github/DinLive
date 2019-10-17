@@ -15,11 +15,15 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - H5与原生通信JsBridge：[JsBridge](https://github.com/lzyzsd/JsBridge)
 - 上拉加载下拉刷新控件：[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
 - Toast：[UniversalToast](https://github.com/bboylin/UniversalToast)
-- fragment任务栈管理：[Fragmentation](https://github.com/YoKeyword/Fragmentation/tree/master)
+- Fragment任务栈管理：[Fragmentation](https://github.com/YoKeyword/Fragmentation/tree/master)
 - 圆角、圆形的ImageView：[NiceImageView](https://github.com/SheHuan/NiceImageView)
 - 布局控件：[FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
 - 安卓工具类库：[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode)
 - 无需注册的EventBus：[LiveEventBus](https://github.com/JeremyLiao/LiveEventBus)
+- 多功能TitleBar：[CommonTitleBar](https://github.com/wuhenzhizao/android-titlebar)
+- 可扩展MATERIAL和IOS风格Dialog：[DialogV3](https://github.com/kongzue/DialogV3)、[NiceDialog](https://github.com/SheHuan/NiceDialog)、[CircleDialog](https://github.com/mylhyl/Android-CircleDialog)
+- 可自定义布局的Banner：[XBanner](https://github.com/xiaohaibin/XBanner)、[ConvenientBanner](https://github.com/saiwu-bigkoo/Android-ConvenientBanner)
+- 消息未读小红点：[MagicRedDot](https://github.com/kanglongba/MagicRedDot)
 
 ## 工程目录
 - app -> 壳模块  
