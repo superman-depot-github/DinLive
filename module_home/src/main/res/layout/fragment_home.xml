@@ -5,16 +5,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include layout="@layout/toolbar" />
-
+    <!--<include layout="@layout/simpletoolbar_layout" />-->
     <RelativeLayout
+        android:id="@+id/stateViewParent"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <com.dinlive.din.baselib.wiget.stateview.StateView
-            android:id="@+id/StateView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
 
         <com.dinlive.din.baselib.wiget.stateview.TipView
             android:id="@+id/tip_view"

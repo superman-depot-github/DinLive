@@ -6,10 +6,10 @@ import android.widget.ImageView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.blankj.utilcode.util.ToastUtils;
 import com.dinlive.din.baselib.Base.BaseFragment;
 import com.dinlive.din.baselib.model.User;
 import com.dinlive.din.baselib.utils.ARouterHub;
-import com.dinlive.din.baselib.utils.ToastUtils;
 import com.dinlive.din.baselib.utils.UserLoginUtils;
 import com.dinlive.din.login.presenter.PFrg_AccountLogin;
 import com.dinlive.din.login.view.IVFrg_AccountLogin;
@@ -52,7 +52,7 @@ public class AccountLoginFragment extends BaseFragment<IVFrg_AccountLogin, PFrg_
 
     @Override
     protected void initView(View mRootView) {
-        toolbar.setNavigationIcon(R.drawable.vector_back);
+        setNavigationIcon(R.drawable.vector_back);
     }
 
     @Override
@@ -76,11 +76,11 @@ public class AccountLoginFragment extends BaseFragment<IVFrg_AccountLogin, PFrg_
             String accountStr = account.getText().toString();
             String passwordtStr = password.getText().toString();
             if (accountStr.isEmpty()) {
-                ToastUtils.show("请输入账号");
+                ToastUtils.showShort("请输入账号");
                 return;
             }
             if (passwordtStr.isEmpty()) {
-                ToastUtils.show("请输入密码");
+                ToastUtils.showShort("请输入密码");
                 return;
             }
             mPresenter.login(accountStr, passwordtStr);

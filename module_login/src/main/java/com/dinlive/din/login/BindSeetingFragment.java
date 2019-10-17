@@ -8,10 +8,10 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.blankj.utilcode.util.ToastUtils;
 import com.dinlive.din.baselib.Base.BaseFragment;
 import com.dinlive.din.baselib.model.User;
 import com.dinlive.din.baselib.utils.ARouterHub;
-import com.dinlive.din.baselib.utils.ToastUtils;
 import com.dinlive.din.baselib.utils.UserLoginUtils;
 import com.dinlive.din.login.presenter.PFrg_BindSeeting;
 import com.dinlive.din.login.view.IVFrg_BindSeeting;
@@ -36,7 +36,6 @@ public class BindSeetingFragment extends BaseFragment<IVFrg_BindSeeting, PFrg_Bi
     ImageView iseyestwopassword;
     @BindView(R2.id.hint)
     TextView hint;
-
 
 
     @Autowired
@@ -66,7 +65,7 @@ public class BindSeetingFragment extends BaseFragment<IVFrg_BindSeeting, PFrg_Bi
 
     @Override
     protected void initView(View mRootView) {
-        toolbar.setNavigationIcon(R.drawable.vector_back);
+        setNavigationIcon(R.drawable.vector_back);
     }
 
     @Override
@@ -92,10 +91,10 @@ public class BindSeetingFragment extends BaseFragment<IVFrg_BindSeeting, PFrg_Bi
                 if (!passwordtStr.isEmpty()) {
                     mPresenter.register(mobile, sms_code, accountStr, passwordtStr);
                 } else {
-                    ToastUtils.show("请设置确认密码");
+                    ToastUtils.showShort("请设置确认密码");
                 }
             } else {
-                ToastUtils.show("请设置密码");
+                ToastUtils.showShort("请设置密码");
             }
 
 

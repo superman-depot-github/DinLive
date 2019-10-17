@@ -7,10 +7,10 @@ import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.blankj.utilcode.util.ToastUtils;
 import com.dinlive.din.baselib.Base.BaseFragment;
 import com.dinlive.din.baselib.model.User;
 import com.dinlive.din.baselib.utils.ARouterHub;
-import com.dinlive.din.baselib.utils.ToastUtils;
 import com.dinlive.din.baselib.utils.UserLoginUtils;
 import com.dinlive.din.login.presenter.PFrg_PhoneQuickLogin;
 import com.dinlive.din.login.view.IVFrg_PhoneQuickLogin;
@@ -58,7 +58,7 @@ public class PhoneQuickLoginFragment extends BaseFragment<IVFrg_PhoneQuickLogin,
 
     @Override
     protected void initView(View mRootView) {
-        toolbar.setNavigationIcon(R.drawable.vector_back);
+        setNavigationIcon(R.drawable.vector_back);
     }
 
     @Override
@@ -86,10 +86,10 @@ public class PhoneQuickLoginFragment extends BaseFragment<IVFrg_PhoneQuickLogin,
                 if (account.getText().toString().trim().matches("^(?:13[0-9]|14[57]|15[0-35-9]|17[013678]|18[0-9])\\d{8}$")) {
                     mPresenter.getCode(account.getText().toString());
                 } else {
-                    ToastUtils.show("手机号码格式错误");
+                    ToastUtils.showShort("手机号码格式错误");
                 }
             } else {
-                ToastUtils.show("手机号码不能为空");
+                ToastUtils.showShort("手机号码不能为空");
             }
         } else if (i == R.id.register) {
             String smgcodeStr = smgcode.getText().toString();
@@ -97,17 +97,17 @@ public class PhoneQuickLoginFragment extends BaseFragment<IVFrg_PhoneQuickLogin,
                 if (account.getText().toString().matches("^(?:13[0-9]|14[57]|15[0-35-9]|17[013678]|18[0-9])\\d{8}$")) {
                     if (!smgcode.getText().toString().trim().isEmpty() || smgcode.getText().toString().trim().length() != 6) {
                         if (smgcode.getText().toString().trim().isEmpty()) {
-                            ToastUtils.show("验证码错误");
+                            ToastUtils.showShort("验证码错误");
                         }
                         mPresenter.checkSmslogin(account.getText().toString().trim(), smgcode.getText().toString().trim());
                     } else {
-                        ToastUtils.show("验证码错误");
+                        ToastUtils.showShort("验证码错误");
                     }
                 } else {
-                    ToastUtils.show("手机格式错误");
+                    ToastUtils.showShort("手机格式错误");
                 }
             } else {
-                ToastUtils.show("手机号码不能为空");
+                ToastUtils.showShort("手机号码不能为空");
             }
         } else if (i == R.id.tologin) {
             pop();

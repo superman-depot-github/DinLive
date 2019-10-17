@@ -1,6 +1,7 @@
 package com.dinlive.din.login.presenter;
 
 
+import com.blankj.utilcode.util.ToastUtils;
 import com.dinlive.din.baselib.Base.BasePresenter;
 import com.dinlive.din.baselib.model.User;
 import com.dinlive.din.baselib.net.result.HttpRespResult;
@@ -10,7 +11,6 @@ import com.dinlive.din.baselib.net.rxjava.observable.TransformerHelper;
 import com.dinlive.din.baselib.net.rxjava.observer.CommonObserver;
 import com.dinlive.din.baselib.net.service.ParmsUtils;
 import com.dinlive.din.baselib.net.service.ServiceManager;
-import com.dinlive.din.baselib.utils.ToastUtils;
 import com.dinlive.din.login.AccountLoginFragment;
 import com.dinlive.din.login.view.IVFrg_AccountLogin;
 
@@ -39,7 +39,7 @@ public class PFrg_AccountLogin extends BasePresenter<IVFrg_AccountLogin> {
                     @Override
                     protected void onSuccess(User user) {
                        // getView().loginSuccess(user);
-                        ToastUtils.show("");
+                        ToastUtils.showShort("");
                     }
 
                     @Override

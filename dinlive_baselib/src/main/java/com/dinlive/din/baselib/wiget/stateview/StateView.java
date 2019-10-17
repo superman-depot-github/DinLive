@@ -95,7 +95,7 @@ public class StateView extends View {
      * 注入到 activity 中
      *
      * @param activity     Activity
-     * @param hasActionBar 是否有 actionbar/toolbar
+     * @param hasActionBar 是否有 actionbar/simpletoolbar_layout
      * @return StateView
      */
     public static StateView inject(@NonNull Activity activity, boolean hasActionBar) {
@@ -117,7 +117,7 @@ public class StateView extends View {
      * 注入到 ViewGroup 中
      *
      * @param parent       extends ViewGroup
-     * @param hasActionBar 是否有 actionbar/toolbar,
+     * @param hasActionBar 是否有 actionbar/simpletoolbar_layout,
      *                     true: 会 setMargin top, margin 大小是 actionbarSize
      *                     false: not set
      * @return StateView
@@ -242,7 +242,7 @@ public class StateView extends View {
      * 注入到 View 中
      *
      * @param view         instanceof ViewGroup
-     * @param hasActionBar 是否有 actionbar/toolbar
+     * @param hasActionBar 是否有 actionbar/simpletoolbar_layout
      * @return StateView
      */
     public static StateView inject(@NonNull View view, boolean hasActionBar) {
@@ -635,7 +635,7 @@ public class StateView extends View {
     }
 
     /**
-     * 设置 topMargin, 当有 actionbar/toolbar 的时候
+     * 设置 topMargin, 当有 actionbar/simpletoolbar_layout 的时候
      */
     public void setTopMargin() {
         ViewGroup.MarginLayoutParams layoutParams = (ViewGroup.MarginLayoutParams) getLayoutParams();

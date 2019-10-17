@@ -43,10 +43,11 @@
             android:background="#fff4f4f4" />
 
         <com.flyco.roundview.RoundTextView
+            android:id="@+id/toTimeUtils"
             style="@style/my_common_item_style"
             android:drawableLeft="@drawable/vector_absorbed"
             android:drawablePadding="10dp"
-            android:text="报名资料"
+            android:text="时间类工具"
             app:rv_backgroundColor="@color/white"
             app:rv_backgroundPressColor="#fff4f4f4" />
 
@@ -58,10 +59,11 @@
             android:background="#ffd6d8da" />
 
         <com.flyco.roundview.RoundTextView
+            android:id="@+id/toDropDownMenu"
             style="@style/my_common_item_style"
             android:drawableLeft="@drawable/vector_notice"
             android:drawablePadding="10dp"
-            android:text="报名资料"
+            android:text="下拉选择工具"
             app:rv_backgroundColor="@color/white"
             app:rv_backgroundPressColor="#fff4f4f4" />
 
@@ -73,6 +75,7 @@
             android:background="#ffd6d8da" />
 
         <com.flyco.roundview.RoundTextView
+            android:id="@+id/toBanner"
             style="@style/my_common_item_style"
             android:drawableLeft="@drawable/vector_seting"
             android:drawablePadding="10dp"

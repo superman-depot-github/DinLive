@@ -3,11 +3,10 @@ package com.dinlive.din.baselib.net.rxjava.observer;
 
 import android.net.ParseException;
 
-import com.dinlive.din.baselib.event.EventTags;
 import com.dinlive.din.baselib.net.result.HttpRespResult;
 import com.dinlive.din.baselib.net.rxjava.converter.ResultException;
+import com.dinlive.din.baselib.utils.EventBusUtils;
 import com.google.gson.JsonParseException;
-import com.jeremyliao.liveeventbus.LiveEventBus;
 
 import org.json.JSONException;
 
@@ -49,7 +48,8 @@ public abstract class CommonObserver<D> implements Observer<HttpRespResult<D>> {
         } else {
             resultException = new ResultException(-1, "未知错误");
         }
-        LiveEventBus.get().with(EventTags.NET_EXCEPTION).post(resultException);
+//        LiveEventBus.get().with(EventTags.NET_EXCEPTION).post(resultException);
+        EventBusUtils.post(resultException);
         onError(resultException);
         e.printStackTrace();
     }

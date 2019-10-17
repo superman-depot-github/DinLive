@@ -1,6 +1,7 @@
 package com.dinlive.din.login.presenter;
 
 
+import com.blankj.utilcode.util.ToastUtils;
 import com.dinlive.din.baselib.Base.BasePresenter;
 import com.dinlive.din.baselib.model.User;
 import com.dinlive.din.baselib.net.result.HttpRespResult;
@@ -10,7 +11,6 @@ import com.dinlive.din.baselib.net.rxjava.observable.TransformerHelper;
 import com.dinlive.din.baselib.net.rxjava.observer.CommonObserver;
 import com.dinlive.din.baselib.net.service.ParmsUtils;
 import com.dinlive.din.baselib.net.service.ServiceManager;
-import com.dinlive.din.baselib.utils.ToastUtils;
 import com.dinlive.din.login.PhoneQuickLoginFragment;
 import com.dinlive.din.login.view.IVFrg_PhoneQuickLogin;
 
@@ -69,7 +69,7 @@ public class PFrg_PhoneQuickLogin extends BasePresenter<IVFrg_PhoneQuickLogin> {
                         if (exception.getCode() == 4) {
                             getView().gotoLoginSeeting(mobile, sms_code);
                         } else {
-                            ToastUtils.show(exception.getMessage());
+                            ToastUtils.showShort(exception.getMessage());
                         }
                     }
                 });

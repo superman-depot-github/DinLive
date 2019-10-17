@@ -5,6 +5,7 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/toolbar_bg"
     android:theme="@style/ToolBarTheme"
     tools:navigationIcon="@drawable/vector_back">
 

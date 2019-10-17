@@ -14,11 +14,15 @@ public interface ARouterHub {
      */
     String HOME = "/module_home/";
     String HOME_FRAGMENT_HOME = HOME + "Fragment_home";
+    String HOME_FRAGMENT_SHOUCANG = HOME + "Fragment_ShouCang";
 
     /**
      * person模块
      */
     String PERSON = "/module_person/";
+    String PERSON_TIMEUTILS_ACTIVITY = PERSON + "TimeUtilsActivity";
+    String PERSON_BANNERS_ACTIVITY = PERSON + "BannersActivity";
+    String PERSON_DROPDOWNMENU_ACTIVITY = PERSON + "DropDownMenuActivity";
     String PERSON_FRAGMENT = PERSON + "FavoriteFragment";
 
     /**
