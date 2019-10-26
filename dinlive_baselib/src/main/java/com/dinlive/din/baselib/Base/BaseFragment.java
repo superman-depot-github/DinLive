@@ -19,6 +19,7 @@ import com.dinlive.din.baselib.wiget.stateview.StateView;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+import com.tbruyelle.rxpermissions2.RxPermissions;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 import org.greenrobot.eventbus.Subscribe;
@@ -36,7 +37,7 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupp
     protected P mPresenter;
     protected Unbinder unBinder;
     protected StateView mStateView;//用于显示加载中、网络异常，空布局、内容布局
-
+    protected  RxPermissions rxPermissions;
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -47,6 +48,7 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupp
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ARouter.getInstance().inject(this);
+        rxPermissions = new RxPermissions(this);
     }
 
     @Override
