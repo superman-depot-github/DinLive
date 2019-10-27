@@ -12,14 +12,14 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 网络请求框架：[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp) retrofit2+okhttp3+rxjava2二次封装
 - 图片加载：Glide V4
 - BaseAdapter：[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
-- H5与原生通信JsBridge：[JsBridge](https://github.com/lzyzsd/JsBridge)
+- AgentWeb,JsBridge,TBS：[AgentWeb](https://github.com/Justson/AgentWeb)、[JsBridge](https://github.com/lzyzsd/JsBridge)、[TBS各种格式的文档阅读](https://x5.tencent.com)
 - 上拉加载下拉刷新控件：[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
 - Toast：[UniversalToast](https://github.com/bboylin/UniversalToast)
 - Fragment任务栈管理：[Fragmentation](https://github.com/YoKeyword/Fragmentation/tree/master)
 - 圆角、圆形的ImageView：[NiceImageView](https://github.com/SheHuan/NiceImageView)
 - 布局控件：[FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
 - 安卓工具类库：[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode)
-- 无需注册的EventBus：[LiveEventBus](https://github.com/JeremyLiao/LiveEventBus)
+- EventBus：[EventBus](https://github.com/greenrobot/EventBus)、[无需注册的LiveEventBus](https://github.com/JeremyLiao/LiveEventBus)
 - 动态权限：[RxPermissions](https://github.com/tbruyelle/RxPermissions)
 - 多功能TitleBar：[CommonTitleBar](https://github.com/wuhenzhizao/android-titlebar)
 - 可扩展MATERIAL和IOS风格Dialog：[DialogV3](https://github.com/kongzue/DialogV3)、[NiceDialog](https://github.com/SheHuan/NiceDialog)、[CircleDialog](https://github.com/mylhyl/Android-CircleDialog)
