@@ -4,8 +4,8 @@ import android.Manifest;
 import android.view.View;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.blankj.utilcode.util.ToastUtils;
-import com.dinlive.din.baselib.Base.BaseFragment;
+import com.dinlive.din.baselib.base.AgentWebActivity;
+import com.dinlive.din.baselib.base.BaseFragment;
 import com.dinlive.din.baselib.utils.ARouterHub;
 import com.dinlive.din.find.presenter.PFrg_Find;
 import com.dinlive.din.find.view.IVFrg_Find;
@@ -28,7 +28,7 @@ public class Fragment_Find extends BaseFragment<IVFrg_Find, PFrg_Find> implement
                 .compose(rxPermissions.ensure(Manifest.permission.CAMERA))
                 .subscribe(granted -> {
                     if (granted) {
-                        ToastUtils.showShort("hhahah");
+                        AgentWebActivity.start(getActivity(),"https://www.imooc.com",false);
                     }
                 });
 

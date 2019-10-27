@@ -5,7 +5,7 @@ import android.widget.RelativeLayout;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.dinlive.din.baselib.Base.BaseFragment;
+import com.dinlive.din.baselib.base.BaseFragment;
 import com.dinlive.din.baselib.model.NewsDetailedBean;
 import com.dinlive.din.baselib.net.rxjava.converter.ResultException;
 import com.dinlive.din.baselib.utils.ARouterHub;

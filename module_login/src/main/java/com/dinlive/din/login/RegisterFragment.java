@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.blankj.utilcode.util.ToastUtils;
-import com.dinlive.din.baselib.Base.BaseFragment;
+import com.dinlive.din.baselib.base.BaseFragment;
 import com.dinlive.din.baselib.utils.ARouterHub;
 import com.dinlive.din.login.presenter.PFrg_Register;
 import com.dinlive.din.login.view.IVFrg_Register;

@@ -1,7 +1,7 @@
 package com.dinlive.din.person.presenter;
 
 
-import com.dinlive.din.baselib.Base.BasePresenter;
+import com.dinlive.din.baselib.base.BasePresenter;
 import com.dinlive.din.baselib.model.NewsDetailedBean;
 import com.dinlive.din.baselib.net.result.HttpRespResult;
 import com.dinlive.din.baselib.net.rxjava.converter.ResultException;

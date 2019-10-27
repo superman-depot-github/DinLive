@@ -1,4 +1,4 @@
-package com.dinlive.din.baselib.Base;
+package com.dinlive.din.baselib.base;
 
 import android.app.Activity;
 import android.content.Intent;

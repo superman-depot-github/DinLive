@@ -96,8 +96,14 @@ dependencies {
 
     //h5交互框架 https://github.com/lzyzsd/JsBridge
     api "com.github.lzyzsd:jsbridge:$jsbridge"
+
     //LiveEventBus消息通信 https://github.com/JeremyLiao/LiveEventBus
     api "com.jeremyliao:live-event-bus:$LiveEventBus"
+
+    //AgentWeb  https://github.com/Justson/AgentWeb
+    api "com.just.agentweb:agentweb:$agentweb" // (必选)
+    api "com.just.agentweb:filechooser:$agentweb"// (可选)
+    api "com.download.library:Downloader:$agentweb"// (可选)
 
     //加载dialog
     implementation 'com.github.gittjy:LoadingDialog:1.0.2'

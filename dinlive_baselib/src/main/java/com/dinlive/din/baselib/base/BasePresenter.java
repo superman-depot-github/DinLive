@@ -1,4 +1,4 @@
-package com.dinlive.din.baselib.Base;
+package com.dinlive.din.baselib.base;
 
 import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;

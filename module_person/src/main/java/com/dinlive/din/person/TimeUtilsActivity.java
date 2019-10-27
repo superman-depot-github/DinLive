@@ -2,8 +2,8 @@ package com.dinlive.din.person;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.blankj.utilcode.util.ToastUtils;
-import com.dinlive.din.baselib.Base.BaseActivity;
-import com.dinlive.din.baselib.Base.BasePresenter;
+import com.dinlive.din.baselib.base.BaseActivity;
+import com.dinlive.din.baselib.base.BasePresenter;
 import com.dinlive.din.baselib.utils.ARouterHub;
 import com.dinlive.din.person.widget.loopview.DataWheelView;
 

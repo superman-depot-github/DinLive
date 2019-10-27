@@ -1,6 +1,6 @@
 package com.dinlive.din.person.view;
 
-import com.dinlive.din.baselib.Base.IBaseView;
+import com.dinlive.din.baselib.base.IBaseView;
 import com.dinlive.din.baselib.model.NewsDetailedBean;
 import com.dinlive.din.baselib.net.rxjava.converter.ResultException;
 

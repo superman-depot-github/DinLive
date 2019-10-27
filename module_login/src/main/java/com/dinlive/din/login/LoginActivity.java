@@ -4,7 +4,7 @@ package com.dinlive.din.login;
 import android.widget.RelativeLayout;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.dinlive.din.baselib.Base.BaseActivity;
+import com.dinlive.din.baselib.base.BaseActivity;
 import com.dinlive.din.baselib.utils.ARouterHub;
 import com.dinlive.din.login.presenter.PAct_Login;
 import com.dinlive.din.login.view.IVAct_Login;

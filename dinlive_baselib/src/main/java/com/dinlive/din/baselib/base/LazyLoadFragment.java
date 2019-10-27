@@ -1,4 +1,4 @@
-package com.dinlive.din.baselib.Base;
+package com.dinlive.din.baselib.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

@@ -10,8 +10,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.dinlive.din.baselib.Base.BaseActivity;
-import com.dinlive.din.baselib.Base.BasePresenter;
+import com.dinlive.din.baselib.base.BaseActivity;
+import com.dinlive.din.baselib.base.BasePresenter;
 import com.dinlive.din.baselib.utils.ARouterHub;
 import com.dinlive.din.baselib.wiget.stateview.StateView;
 import com.dinlive.din.person.adapter.ConstellationAdapter;

@@ -10,6 +10,13 @@ package com.dinlive.din.baselib.utils;
  */
 public interface ARouterHub {
     /**
+     * dinlive_baselib模块
+     */
+    String BASE = "/dinlive_baselib/";
+    String BASE_ACTIVITY_AGENTWEB = BASE + "AgentWebActivity";
+    String BASE_FRAGMENT_AGENTWEB = BASE + "AgentWebFragment";
+
+    /**
      * home模块
      */
     String HOME = "/module_home/";

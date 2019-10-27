@@ -1,26 +1,29 @@
-package com.dinlive.din.baselib.Base;
+package com.dinlive.din.baselib.base;
 
-import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.ColorInt;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
+import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.blankj.utilcode.util.BarUtils;
+import com.blankj.utilcode.util.SizeUtils;
+import com.blankj.utilcode.util.ToastUtils;
 import com.dinlive.din.baselib.R;
+import com.dinlive.din.baselib.event.EventTags;
+import com.dinlive.din.baselib.net.rxjava.converter.ResultException;
+import com.dinlive.din.baselib.utils.ActTaskUtil;
 import com.dinlive.din.baselib.utils.EventBusUtils;
 import com.dinlive.din.baselib.wiget.stateview.StateView;
+import com.jeremyliao.liveeventbus.LiveEventBus;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
-import com.tbruyelle.rxpermissions2.RxPermissions;
-import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
@@ -28,62 +31,85 @@ import org.greenrobot.eventbus.ThreadMode;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import me.jessyan.autosize.internal.CustomAdapt;
+import xyz.bboylin.universialtoast.UniversalToast;
 
-public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupportFragment implements CustomAdapt, OnRefreshListener, OnLoadMoreListener {
+public abstract class BaseActivity<V, P extends BasePresenter<V>> extends MySupportActivity implements CustomAdapt, OnRefreshListener, OnLoadMoreListener {
     private TextView mBarTitle;
     private TextView mBarRight;
-    protected RxAppCompatActivity mActivity;
-    protected View mRootView;
     protected P mPresenter;
     protected Unbinder unBinder;
     protected StateView mStateView;//用于显示加载中、网络异常，空布局、内容布局
-    protected RxPermissions rxPermissions;
+//    protected RxPermissions rxPermissions;
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        mActivity = (RxAppCompatActivity) context;
-    }
-
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ARouter.getInstance().inject(this);
-        rxPermissions = new RxPermissions(this);
+//        rxPermissions = new RxPermissions(this);
+        setContentView(getLayoutId());
     }
 
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public void setContentView(int layoutResID) {
+        super.setContentView(layoutResID);
+        unBinder = ButterKnife.bind(this);
+        mStateView = StateView.inject(this, true);
         mPresenter = createPresenter();
-        mRootView = inflater.inflate(getLayoutId(), container, false);
-        unBinder = ButterKnife.bind(this, mRootView);
         if (mPresenter != null) {
-            mPresenter.attachView((V) this);//因为之后所有的子类都要实现对应的View接口
-        } else {
-            mPresenter = createPresenter();
+            mPresenter.attachView((V) this);
         }
-        mStateView = StateView.inject(mRootView);
-        return mRootView;
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+        setPortraitScreen();
+        initStatusBar();
         initToolBar();
-        initView(mRootView);
+        initView();
         initListener();
         initData();
+        initNetEceptionListener();
     }
 
     protected abstract int getLayoutId();
 
     protected abstract P createPresenter();
 
-    protected abstract void initView(View mRootView);
+    protected abstract void initView();
 
     protected abstract void initListener();
 
     protected abstract void initData();
-//*****************************************EventBus事件分发子类*********************************************
+
+    protected void initNetEceptionListener() {
+        LiveEventBus.get()
+                .with(EventTags.NET_EXCEPTION, ResultException.class)
+                .observe(this, e -> {
+                    switch (e.getCode()) {
+                        case 3://需要从新登陆
+                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT,
+                                    UniversalToast.EMPHASIZE).showWarning();
+                            break;
+                        case 4://需要完善用户信息
+                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT).setGravity(Gravity.BOTTOM, 0, SizeUtils.dp2px(60)).showWarning();
+                            break;
+//                        case -5://无网络链接
+//                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT, UniversalToast.CLICKABLE)
+//                                    .setGravity(Gravity.BOTTOM, 0, SizeUtils.dp2px(60))
+//                                    .setClickCallback("设置网络", new View.OnClickListener() {
+//                                        @Override
+//                                        public void onClick(View view) {
+//                                            NetworkUtils.openWirelessSettings();
+//                                        }
+//                                    })
+//                                    .showError();
+//                            break;
+
+                        default:
+                            UniversalToast.makeText(BaseActivity.this, e.getMessage(), UniversalToast.LENGTH_SHORT).setGravity(Gravity.BOTTOM, 0, SizeUtils.dp2px(60)).showWarning();
+                            break;
+                    }
+                });
+    }
+
+    //*****************************************EventBus事件分发子类*********************************************
+
     /**
      * 是否订阅Bus事件
      * 你的activity 或者fragment 想要收到外界发送的消息 就得实现该方法并返回true
@@ -110,10 +136,23 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupp
      * @param event
      */
     protected void eventBusHandle(Object event) {
-
+        if (event instanceof ResultException) {
+            ToastUtils.showShort(((ResultException) event).getMessage());
+        }
     }
 
     //*****************************************屏幕尺寸和方向************************************************
+
+    /**
+     * 设置屏幕方向
+     */
+    public void setPortraitScreen() {
+        if (isPortraitScreen()) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+    }
 
     /**
      * 是否按照宽度进行等比例适配 (为了保证在高宽比不同的屏幕上也能正常适配, 所以只能在宽度和高度之中选一个作为基准进行适配)
@@ -147,39 +186,26 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupp
     public boolean isPortraitScreen() {
         return true;
     }
-
     //*****************************************状态栏和ToolBar************************************************
+
+    /**
+     * 更新状态栏颜色和状态栏透明度
+     */
+    public void initStatusBar() {
+        BarUtils.setStatusBarLightMode(this, true);
+    }
 
     /**
      * 初始化ToolBar
      */
     private void initToolBar() {
-        mBarTitle = mRootView.findViewById(R.id.bar_title);
-        mBarRight = mRootView.findViewById(R.id.bar_right);
+        mBarTitle = findViewById(R.id.bar_title);
+        mBarRight = findViewById(R.id.bar_right);
         //判断是否有Toolbar,并默认显示返回按钮
         if (null != getToolbar() && isShowBacking()) {
             setNavigationIcon(R.drawable.vector_back);
-            getToolbar().setNavigationOnClickListener(v -> {
-                setNavigationOnClickListener();
-            });
+            getToolbar().setNavigationOnClickListener(v -> setNavigationOnClickListener());
         }
-    }
-
-    /**
-     * 后退按钮图片
-     */
-    public void setNavigationIcon(@DrawableRes int resId) {
-        getToolbar().setNavigationIcon(resId);
-    }
-
-
-    /**
-     * 是否显示后退按钮,默认显示,可在子类重写该方法.
-     *
-     * @return
-     */
-    public boolean isShowBacking() {
-        return true;
     }
 
     /**
@@ -189,11 +215,30 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupp
      * @return support.v7.widget.Toolbar.
      */
     public Toolbar getToolbar() {
-        return mRootView.findViewById(R.id.toolbar);
+        return findViewById(R.id.toolbar);
     }
 
+    /**
+     * 后退按钮图片
+     */
+    public void setNavigationIcon(@DrawableRes int resId) {
+        getToolbar().setNavigationIcon(resId);
+    }
+
+    /**
+     * 返回finish
+     */
     public void setNavigationOnClickListener() {
-        getActivity().finish();
+        this.finish();
+    }
+
+    /**
+     * 是否显示后退按钮,默认显示,可在子类重写该方法.
+     *
+     * @return
+     */
+    public boolean isShowBacking() {
+        return true;
     }
 
     /**
@@ -274,7 +319,6 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupp
     public void onRefresh(@NonNull RefreshLayout refreshLayout) {
 
     }
-
     //*****************************************生命周期相关*********************************************
 
     /**
@@ -303,7 +347,7 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupp
      * 界面销毁释放资源
      */
     @Override
-    public void onDestroy() {
+    protected void onDestroy() {
         super.onDestroy();
         if (mPresenter != null) {
             mPresenter.detachView();
@@ -316,5 +360,7 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupp
         if (mStateView != null) {
             mStateView = null;
         }
+
+        ActTaskUtil.getInstance().pop(this);
     }
 }

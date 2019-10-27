@@ -1,6 +1,6 @@
 package com.dinlive.din.find.presenter;
 
-import com.dinlive.din.baselib.Base.BasePresenter;
+import com.dinlive.din.baselib.base.BasePresenter;
 import com.dinlive.din.find.Fragment_Find;
 import com.dinlive.din.find.view.IVFrg_Find;
 
