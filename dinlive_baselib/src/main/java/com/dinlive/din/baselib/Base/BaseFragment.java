@@ -37,7 +37,7 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends MySupp
     protected P mPresenter;
     protected Unbinder unBinder;
     protected StateView mStateView;//用于显示加载中、网络异常，空布局、内容布局
-    protected  RxPermissions rxPermissions;
+    protected RxPermissions rxPermissions;
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);

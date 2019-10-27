@@ -14,7 +14,11 @@ public interface ARouterHub {
      */
     String HOME = "/module_home/";
     String HOME_FRAGMENT_HOME = HOME + "Fragment_home";
-    String HOME_FRAGMENT_SHOUCANG = HOME + "Fragment_ShouCang";
+    /**
+     * find模块
+     */
+    String FIND = "/module_find/";
+    String FIND_FRAGMENT = FIND + "Fragment_Find";
 
     /**
      * person模块

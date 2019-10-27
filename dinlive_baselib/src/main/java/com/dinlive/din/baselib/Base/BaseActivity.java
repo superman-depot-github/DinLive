@@ -24,7 +24,6 @@ import com.jeremyliao.liveeventbus.LiveEventBus;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
-import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
@@ -40,12 +39,12 @@ public abstract class BaseActivity<V, P extends BasePresenter<V>> extends MySupp
     protected P mPresenter;
     protected Unbinder unBinder;
     protected StateView mStateView;//用于显示加载中、网络异常，空布局、内容布局
-    protected RxPermissions rxPermissions;
+//    protected RxPermissions rxPermissions;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ARouter.getInstance().inject(this);
-        rxPermissions = new RxPermissions(this);
+//        rxPermissions = new RxPermissions(this);
         setContentView(getLayoutId());
     }
 

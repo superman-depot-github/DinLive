@@ -49,10 +49,10 @@ public class HomeActivity extends BaseActivity<IVAct_Home, PAct_Home> implements
     protected void initView() {
         //设置StatusBar 显示模式(黑色或者白色)
         fragments.add((Fragment) ARouter.getInstance().build(ARouterHub.HOME_FRAGMENT_HOME).navigation());
-        fragments.add((Fragment) ARouter.getInstance().build(ARouterHub.HOME_FRAGMENT_SHOUCANG).navigation());
+        fragments.add((Fragment) ARouter.getInstance().build(ARouterHub.FIND_FRAGMENT).navigation());
         fragments.add((Fragment) ARouter.getInstance().build(ARouterHub.PERSON_FRAGMENT).navigation());
         itemIcon.add(new BotBean("首页", R.drawable.normal_home, R.drawable.select_home));
-        itemIcon.add(new BotBean("收藏", R.drawable.normal_favorite, R.drawable.select_favorite));
+        itemIcon.add(new BotBean("发现", R.drawable.normal_favorite, R.drawable.select_favorite));
         itemIcon.add(new BotBean("个人", R.drawable.normal_person, R.drawable.select_person));
         mVpContent.setAdapter(new FragmentAdapter(getSupportFragmentManager()));
         mVpContent.setOffscreenPageLimit(fragments.size());
