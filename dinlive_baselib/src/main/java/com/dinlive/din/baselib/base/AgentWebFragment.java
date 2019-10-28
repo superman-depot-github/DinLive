@@ -83,7 +83,37 @@ public class AgentWebFragment extends BaseFragment {
     }
 
     protected WebViewClient getWebViewClient() {
-        return null;
+        return new WebViewClient() {
+            BridgeWebViewClient mBridgeWebViewClient = new BridgeWebViewClient(getWebView());
+
+            @RequiresApi(api = Build.VERSION_CODES.N)
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                return mBridgeWebViewClient.shouldOverrideUrlLoading(view, request);  //兼容高版本，必须设置
+            }
+
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return mBridgeWebViewClient.shouldOverrideUrlLoading(view, url);  //兼容低版本，必须设置
+            }
+
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                mBridgeWebViewClient.onPageStarted(view, url, favicon);  //必须设置
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {  //必须设置
+                mBridgeWebViewClient.onPageFinished(view, url);
+            }
+
+            @TargetApi(Build.VERSION_CODES.M)
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+                super.onReceivedError(view, request, error);
+            }
+        };
     }
 
     protected WebChromeClient getWebChromeClient() {
