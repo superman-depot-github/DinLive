@@ -29,6 +29,12 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 ## 工程目录
 - app -> 壳模块  
     MainActivity、启动页、欢迎页、微信支付分享配置 
+- module_home -> 首页模块  
+    好多功能不细说
+- module_find -> 发现模块  
+    朋友圈等功能
+- module_me -> 个人模块  
+    展示个人用户信息
 - module_login -> 登录模块  
     登录、注册、三方登录（QQ,微信）
 ## 业务流程
