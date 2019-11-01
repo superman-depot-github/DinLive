@@ -29,11 +29,13 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 收藏的小东西看完就删除：[1](http://www.apkbus.com/thread-578940-1-1.html)、
                       [2](http://www.apkbus.com/thread-569482-1-1.html)、
                       [3](http://www.apkbus.com/thread-309926-1-1.html)、
-                      [4](http://www.apkbus.com/thread-271454-1-1.html)、
-                      [5](http://www.apkbus.com/thread-309926-1-1.html)、
-                      [6](http://www.apkbus.com/thread-306966-1-1.html)、
-                      [7](http://www.apkbus.com/thread-272481-1-1.html)、
-                      [8](http://www.apkbus.com/thread-271217-1-1.html)、
+                      [4](http://www.apkbus.com/thread-268117-1-1.html)、
+                      [5](http://www.apkbus.com/thread-271454-1-1.html)、
+                      [6](http://www.apkbus.com/thread-309926-1-1.html)、
+                      [7](http://www.apkbus.com/thread-306966-1-1.html)、
+                      [8](http://www.apkbus.com/thread-272481-1-1.html)、
+                      [9](http://www.apkbus.com/thread-271217-1-1.html)、
+                      [10](http://www.apkbus.com/thread-266212-1-1.html)、
 ## 工程目录
 - app -> 壳模块  
     MainActivity、启动页、欢迎页、微信支付分享配置 
