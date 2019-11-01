@@ -28,6 +28,10 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 频道管理：[模仿支付宝](http://www.apkbus.com/thread-600249-1-1.html)、[模仿人人车](http://www.apkbus.com/thread-600215-1-1.html)
 - 收藏的小东西看完就删除：[1](http://www.apkbus.com/thread-578940-1-1.html)、
                       [2](http://www.apkbus.com/thread-569482-1-1.html)、
+                      [3](http://www.apkbus.com/thread-309926-1-1.html)、
+                      [4](http://www.apkbus.com/thread-309926-1-1.html)、
+                      [5](http://www.apkbus.com/thread-306966-1-1.html)、
+                      [6](http://www.apkbus.com/thread-272481-1-1.html)、
 ## 工程目录
 - app -> 壳模块  
     MainActivity、启动页、欢迎页、微信支付分享配置 
