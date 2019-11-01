@@ -58,4 +58,4 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
     计入直播、礼物等
 3. 私聊 
    客服
- ### [下载链接](https://www.pgyer.com/hOPa)
+ ### [APK友情链接](https://www.pgyer.com/hOPa)
