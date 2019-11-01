@@ -35,6 +35,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
                       [7](http://www.apkbus.com/thread-272481-1-1.html)、
                       [8](http://www.apkbus.com/thread-271217-1-1.html)、
                       [9](http://www.apkbus.com/thread-266212-1-1.html)、
+                      [10](https://github.com/bingoogolapple/BGAPhotoPicker-Android)、
                       [RV横向加载更多](https://blog.csdn.net/lanxuan1993/article/details/94559744)、
 ## 工程目录
 - app -> 壳模块  
