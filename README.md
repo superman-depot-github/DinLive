@@ -27,6 +27,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 消息未读小红点:[MagicRedDot](https://github.com/kanglongba/MagicRedDot)
 - 多图列表及预览:[ZoomPreviewPicture](https://github.com/yangchaojiang/ZoomPreviewPicture)、[PhotoPicker](https://github.com/yudu233/PhotoPicker)、[PictureSelector](https://github.com/LuckSiege/PictureSelector)、[ImageWatcher](https://github.com/iielse/ImageWatcher)
 - Android:[开源集合](https://hndeveloper.github.io/2017/github-android-ui.html#Spinner)
+- 状态栏:[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)
 - 频道管理：[模仿支付宝](http://www.apkbus.com/thread-600249-1-1.html)、[今日头条ChannelView](https://github.com/chengzhicao/ChannelView)、[模仿人人车](http://www.apkbus.com/thread-600215-1-1.html)
 - 收藏的小东西看完就删除：[1](http://www.apkbus.com/thread-578940-1-1.html)、
                       [2](http://www.apkbus.com/thread-569482-1-1.html)、
