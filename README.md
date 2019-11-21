@@ -10,7 +10,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 屏幕适配方案：[AndroidAutoSize](https://github.com/JessYanCoding/AndroidAutoSize/blob/master/README-zh.md)
 - 视屏播放器：[GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer)
 - 网络请求框架：[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp) retrofit2+okhttp3+rxjava2二次封装
-- Glide图片套装：[glide](https://github.com/bumptech/glide)[glide-transformations](https://github.com/wasabeef/glide-transformations)
+- Glide图片套装：[glide](https://github.com/bumptech/glide)、[glide-transformations](https://github.com/wasabeef/glide-transformations)
 - BaseAdapter：[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
 - WebView功能集成：[AgentWeb](https://github.com/Justson/AgentWeb)、[JsBridge](https://github.com/lzyzsd/JsBridge)、[TBS各种格式的文档阅读](https://x5.tencent.com)
 - 上拉加载下拉刷新控件：[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
