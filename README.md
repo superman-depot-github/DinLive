@@ -31,6 +31,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 九宫格:[NineGridView](https://github.com/Vanish136/NineGridView)、[LQRNineGridImageView](https://github.com/GitLqr/LQRNineGridImageView)、[RecyclerView九宫格](https://blog.csdn.net/cjs1534717040/article/details/78459821)
 - ios开关:[SwitchButton](https://github.com/zcweng/SwitchButton)、[EasySwitchButton](https://github.com/heshiweij/EasySwitchButton)
 - 状态栏:[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)
+- 仿QQ侧滑菜单:[SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout)
 - 频道管理：[模仿支付宝](http://www.apkbus.com/thread-600249-1-1.html)、[今日头条ChannelView](https://github.com/chengzhicao/ChannelView)、[模仿人人车](http://www.apkbus.com/thread-600215-1-1.html)
 - 收藏的小东西看完就删除：[1](http://www.apkbus.com/thread-578940-1-1.html)、
                       [2](http://www.apkbus.com/thread-569482-1-1.html)、
