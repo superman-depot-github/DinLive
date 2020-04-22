@@ -1,5 +1,11 @@
 # DinLive
 **APP描述**
+## Flutter学习 
+- [Dart](https://flutter-io.cn)、
+  [Dart语法](https://www.cnblogs.com/tangs/articles/10330579.html)、
+  [flutter中文社区](https://flutter-io.cn)、
+  [flutter书籍](https://book.flutterchina.club)、
+  [flutter开源](https://pub.flutter-io.cn)、
 ## 技术要点  
 kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文件阅读、ARouter  
 项目采用MVC、MVVM两种开发模式，根据业务进行组件化开发、通过ARouter进行页面跳转和数据交互  
