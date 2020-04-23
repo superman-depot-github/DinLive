@@ -3,7 +3,7 @@
 ## 技术要点  
 kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文件阅读、ARouter  
 项目采用MVC、MVVM两种开发模式，根据业务进行组件化开发、通过ARouter进行页面跳转和数据交互  
-
+- android 工具下载：[developer](https://developer.android.google.cn/studio)
 - 组件化框架：[CC](https://qibilly.com/CC-website)
 - 模块间路由、通信，解耦：[ARouter](https://github.com/alibaba/ARouter/blob/master/README_CN.md)
 - 三方app渠道包插件：[VasDolly](https://github.com/Tencent/VasDolly/blob/master/command/README.md)
