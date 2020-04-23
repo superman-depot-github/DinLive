@@ -14,6 +14,8 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 
 - 组件化框架：[CC](https://qibilly.com/CC-website)
 - 模块间路由、通信，解耦：[ARouter](https://github.com/alibaba/ARouter/blob/master/README_CN.md)
+- 三方app渠道包插件：[VasDolly](https://github.com/Tencent/VasDolly/blob/master/command/README.md)
+- 模块间路由、通信，解耦：[ARouter](https://github.com/alibaba/ARouter/blob/master/README_CN.md)
 - 崩溃手机、热更新方案：[bugly、tinker](https://bugly.qq.com/docs/)
 - 屏幕适配方案：[AndroidAutoSize](https://github.com/JessYanCoding/AndroidAutoSize/blob/master/README-zh.md)
 - 视屏播放器：[GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer)
