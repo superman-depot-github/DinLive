@@ -36,7 +36,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 可自定义布局的Banner：[XBanner](https://github.com/xiaohaibin/XBanner)、[ConvenientBanner](https://github.com/saiwu-bigkoo/Android-ConvenientBanner)
 - 消息未读小红点:[MagicRedDot](https://github.com/kanglongba/MagicRedDot)
 - 多图列表及预览:[ZoomPreviewPicture](https://github.com/yangchaojiang/ZoomPreviewPicture)、[PhotoPicker](https://github.com/yudu233/PhotoPicker)、[PictureSelector](https://github.com/LuckSiege/PictureSelector)、[ImageWatcher](https://github.com/iielse/ImageWatcher)
-- Android:[开源集合](https://hndeveloper.github.io/2017/github-android-ui.html#Spinner)、[2](https://blog.csdn.net/csdn576038874/article/details/81200674)、[3](https://github.com/Tencent/VasDolly/blob/master/command/README.md)
+- Android:[开源集合](https://hndeveloper.github.io/2017/github-android-ui.html#Spinner)、[2](https://blog.csdn.net/csdn576038874/article/details/81200674)、[3](https://github.com/XXApple/AndroidLibs/tree/master/完整开源项目Project)
 - 滑动布局:[DragSlopLayout](https://github.com/Rukey7/DragSlopLayout)
 - 九宫格:[NineGridView](https://github.com/Vanish136/NineGridView)、[LQRNineGridImageView](https://github.com/GitLqr/LQRNineGridImageView)、[RecyclerView九宫格](https://blog.csdn.net/cjs1534717040/article/details/78459821)
 - ios开关:[SwitchButton](https://github.com/zcweng/SwitchButton)、[EasySwitchButton](https://github.com/heshiweij/EasySwitchButton)
