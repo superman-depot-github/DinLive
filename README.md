@@ -82,9 +82,9 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
     计入直播、礼物等
 3. 私聊 
    客服
- ### [APK友情链接](https://www.pgyer.com/hOPa)
+### [APK友情链接](https://www.pgyer.com/hOPa)
  
-#### APP打包发布
+### APP打包发布
 1. 加固完成下载apk [腾讯加固](https://wetest.qq.com/product/appReinforcement)
 2. 签名 jarsigner -verbose -keystore 签名文件.jks -signedjar 加固后的APK路径.apk 加固前的APK路径.apk 签名文件的alias
 3. 渠道包 [VasDolly](https://github.com/Tencent/VasDolly/blob/master/command/README.md) java -jar VasDolly.jar put -c channel.txt 加固后的APK全路径.apk ./APK将要保存的路径
