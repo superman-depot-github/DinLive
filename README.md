@@ -85,8 +85,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
  ### [APK友情链接](https://www.pgyer.com/hOPa)
  
  ### 应用MD5信息获取
-1. 云课堂 keytool -list -v -keystore ./neweducation.jks -alias ShenTongApp -storepass 38208888 -keypass 38208888
-2. 驾驶员 keytool -list -v -keystore ./continuing.jks -alias shentong_android -storepass shentong71 -keypass shentong71
+1. keytool -list -v -keystore ./***.jks -alias *** -storepass *** -keypass ***
 
 ### 腾讯加固流程
 1. 加固完成下载apk [腾讯加固](https://wetest.qq.com/product/appReinforcement)
