@@ -54,6 +54,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
                       [Socket](https://www.jianshu.com/p/c27c4e9b2211)、
                       [Handler](https://www.jianshu.com/p/f7cabfe19720)、
                       [动画](https://www.jianshu.com/p/769242cba1f8)、
+                      [FFmpeg](http://www.ffmpeg.club/android.html)、
                  
 ## 工程目录
 - app -> 壳模块  
