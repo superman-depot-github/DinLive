@@ -51,6 +51,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
                       [Gradle](https://blog.csdn.net/heqiangflytosky/article/details/50853268)、
                       [Nexus](https://blog.csdn.net/qinlincnds/article/details/90757619)、
                       [studio上传github](https://www.cnblogs.com/imqsl/p/6763133.html)、
+                      [Socket](https://www.jianshu.com/p/c27c4e9b2211)、
                  
 ## 工程目录
 - app -> 壳模块  
