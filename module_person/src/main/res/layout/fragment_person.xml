@@ -83,6 +83,15 @@
             app:rv_backgroundColor="@color/white"
             app:rv_backgroundPressColor="#fff4f4f4" />
 
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/toUtils"
+            style="@style/my_common_item_style"
+            android:drawableLeft="@drawable/vector_seting"
+            android:drawablePadding="10dp"
+            android:text="报名资料"
+            app:rv_backgroundColor="@color/white"
+            app:rv_backgroundPressColor="#fff4f4f4" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="10dp"

@@ -105,7 +105,7 @@ public class AccountLoginFragment extends BaseFragment<IVFrg_AccountLogin, PFrg_
 
     @Override
     public void loginSuccess(User user) {
-        UserLoginUtils.upDateUser(user);
+        UserLoginUtils.setUser(user);
         getActivity().finish();
     }
 }

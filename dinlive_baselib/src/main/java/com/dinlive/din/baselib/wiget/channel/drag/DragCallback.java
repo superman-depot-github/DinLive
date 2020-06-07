@@ -1,0 +1,6 @@
+package com.dinlive.din.baselib.wiget.channel.drag;
+
+public interface DragCallback {
+	void startDrag(int position);
+	void endDrag(int position);
+}

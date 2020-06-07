@@ -1,9 +1,15 @@
 package com.dinlive.din.baselib.base;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.os.Build;
 import android.support.annotation.ColorInt;
+import android.support.annotation.RequiresApi;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.FrameLayout;
@@ -16,6 +22,7 @@ import com.dinlive.din.baselib.R;
 import com.dinlive.din.baselib.R2;
 import com.dinlive.din.baselib.utils.ARouterHub;
 import com.github.lzyzsd.jsbridge.BridgeWebView;
+import com.github.lzyzsd.jsbridge.BridgeWebViewClient;
 import com.just.agentweb.AgentWeb;
 import com.just.agentweb.MiddlewareWebChromeBase;
 import com.just.agentweb.MiddlewareWebClientBase;
@@ -52,11 +59,11 @@ public class AgentWebFragment extends BaseFragment {
         mAgentWeb = AgentWeb.with(this)
                 .setAgentWebParent(fl_web, new ViewGroup.LayoutParams(-1, -1))
                 .useDefaultIndicator(getIndicatorColor(), getIndicatorHeight())
+                .setWebView(createJsBridgeWebView())
                 .setWebViewClient(getWebViewClient())
                 .setWebChromeClient(getWebChromeClient())
-                .useMiddlewareWebChrome(getMiddleWareWebChrome())
                 .useMiddlewareWebClient(getMiddleWareWebClient())
-                .setWebView(createJsBridgeWebView())
+                .useMiddlewareWebChrome(getMiddleWareWebChrome())
                 .setSecurityType(AgentWeb.SecurityType.DEFAULT_CHECK)
                 .createAgentWeb()
                 .ready()
@@ -84,7 +91,7 @@ public class AgentWebFragment extends BaseFragment {
 
     protected WebViewClient getWebViewClient() {
         return new WebViewClient() {
-            BridgeWebViewClient mBridgeWebViewClient = new BridgeWebViewClient(getWebView());
+            BridgeWebViewClient mBridgeWebViewClient = new BridgeWebViewClient(bridgeWebView);
 
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override

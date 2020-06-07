@@ -33,6 +33,8 @@ public interface ARouterHub {
     String PERSON = "/module_person/";
     String PERSON_TIMEUTILS_ACTIVITY = PERSON + "TimeUtilsActivity";
     String PERSON_BANNERS_ACTIVITY = PERSON + "BannersActivity";
+    String PERSON_UTILS_ACTIVITY = PERSON + "UtilsActivity";
+    String PERSON_MENUMANAGE_ACTIVITY = PERSON + "MenuManageActivity";
     String PERSON_DROPDOWNMENU_ACTIVITY = PERSON + "DropDownMenuActivity";
     String PERSON_FRAGMENT = PERSON + "FavoriteFragment";
 

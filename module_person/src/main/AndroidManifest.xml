@@ -11,6 +11,8 @@
         <activity android:name=".TimeUtilsActivity" />
         <activity android:name=".DropDownMenuActivity" />
         <activity android:name=".BannersActivity" />
+        <activity android:name=".UtilsActivity" />
+        <activity android:name=".MenuManageActivity" />
 
     </application>
 </manifest>

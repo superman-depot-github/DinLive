@@ -32,4 +32,30 @@
         <item name="contentInsetStartWithNavigation">0dp</item>
     </style>
 
+    <!-- 可拖动的九宫格控件 -->
+    <declare-styleable name="BGASortableNinePhotoLayout">
+        <attr name="bga_snpl_plusEnable" format="boolean" />
+        <attr name="bga_snpl_sortable" format="boolean" />
+        <attr name="bga_snpl_deleteDrawable" format="reference" />
+        <attr name="bga_snpl_maxItemCount" format="integer" />
+        <attr name="bga_snpl_itemSpanCount" format="integer" />
+        <attr name="bga_snpl_deleteDrawableOverlapQuarter" format="boolean" />
+        <attr name="bga_snpl_plusDrawable" format="reference" />
+        <attr name="bga_snpl_itemCornerRadius" format="dimension|reference" />
+        <attr name="bga_snpl_itemWhiteSpacing" format="dimension|reference" />
+        <attr name="bga_snpl_otherWhiteSpacing" format="dimension|reference" />
+        <attr name="bga_snpl_placeholderDrawable" format="reference" />
+        <attr name="bga_snpl_editable" format="boolean" />
+        <attr name="bga_snpl_itemWidth" format="dimension|reference" />
+    </declare-styleable>
+    <declare-styleable name="BGAImageView">
+        <attr name="android:src" />
+        <attr name="bga_iv_circle" format="boolean" />
+        <attr name="bga_iv_cornerRadius" format="reference|dimension" />
+        <attr name="bga_iv_square" format="boolean" />
+        <attr name="bga_iv_borderWidth" format="reference|dimension" />
+        <attr name="bga_iv_borderColor" format="reference|color" />
+    </declare-styleable>
+    <!-- 可拖动的九宫格控件 -->
+
 </resources>

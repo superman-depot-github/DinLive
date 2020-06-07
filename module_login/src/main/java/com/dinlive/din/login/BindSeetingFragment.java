@@ -124,7 +124,7 @@ public class BindSeetingFragment extends BaseFragment<IVFrg_BindSeeting, PFrg_Bi
 
     @Override
     public void registerSuccess(User user) {
-        UserLoginUtils.upDateUser(user);
+        UserLoginUtils.setUser(user);
         pop();
     }
 }

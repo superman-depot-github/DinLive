@@ -58,11 +58,11 @@ public class PersonFragment extends BaseFragment<IVFrg_Favorite, PFrg_Favorite> 
     }
 
 
-    @OnClick({R2.id.login, R2.id.userIcon, R2.id.toTimeUtils, R2.id.toDropDownMenu, R2.id.toBanner})
+    @OnClick({R2.id.login, R2.id.userIcon, R2.id.toTimeUtils, R2.id.toDropDownMenu, R2.id.toBanner, R2.id.toUtils})
     public void onViewClicked(View view) {
         int i = view.getId();
         if (i == R.id.login || i == R.id.login) {
-            if (UserLoginUtils.getUser() != null) {
+            if (UserLoginUtils.getInstance().getUser() != null) {
                 ToastUtils.showShort("当前已经登陆");
             } else {
                 ARouter.getInstance()
@@ -82,6 +82,10 @@ public class PersonFragment extends BaseFragment<IVFrg_Favorite, PFrg_Favorite> 
         } else if (i == R.id.toBanner) {
             ARouter.getInstance()
                     .build(ARouterHub.PERSON_BANNERS_ACTIVITY)
+                    .navigation(getActivity());
+        }else if (i == R.id.toUtils) {
+            ARouter.getInstance()
+                    .build(ARouterHub.PERSON_UTILS_ACTIVITY)
                     .navigation(getActivity());
         }
     }

@@ -156,7 +156,7 @@ public class PhoneQuickLoginFragment extends BaseFragment<IVFrg_PhoneQuickLogin,
 
     @Override
     public void checkSmsloginSuccess(String mobile, String sms_code, User user) {
-        UserLoginUtils.upDateUser(user);
+        UserLoginUtils.setUser(user);
        pop();
     }
 

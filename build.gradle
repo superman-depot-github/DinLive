@@ -45,6 +45,7 @@ ext {
     design = '28.0.0'
     butterknife = '9.0.0'
     SmartRefreshLayout = '1.1.0-alpha-11'
+    SmartRefreshHorizontal = '1.0.0-beta-1'
     utilcode = '1.24.7'
     stateview = '1.2.1'
     autosize = '1.1.2'
