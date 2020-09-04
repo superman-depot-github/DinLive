@@ -15,7 +15,8 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - Glide图片套装：[glide](https://github.com/bumptech/glide)、[glide-transformations](https://github.com/wasabeef/glide-transformations)
 - BaseAdapter：[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
 - WebView功能集成：[AgentWeb](https://github.com/Justson/AgentWeb)、[JsBridge](https://github.com/lzyzsd/JsBridge)、[TBS各种格式的文档阅读](https://x5.tencent.com)
-- 上拉加载下拉刷新控件：[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
+- 上拉加载下拉刷新控件：[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)、
+                    [SpringView](https://github.com/liaoinstan/SpringView)、
 - Toast：[UniversalToast](https://github.com/bboylin/UniversalToast)
 - Fragment任务栈管理：[Fragmentation](https://github.com/YoKeyword/Fragmentation/tree/master)
 - UI插件：[多功能的NiceImageView](https://github.com/SheHuan/NiceImageView)、[五大布局FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
@@ -34,6 +35,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - ios开关:[SwitchButton](https://github.com/zcweng/SwitchButton)、[EasySwitchButton](https://github.com/heshiweij/EasySwitchButton)
 - 状态栏:[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)
 - Android截屏:[Android截屏方案](https://www.jianshu.com/p/980a75a31f2f)
+- 引导页:[GuideViewt](https://github.com/binIoter/GuideView)
 - 仿QQ侧滑菜单:[SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout)
 - 频道管理：[模仿支付宝](http://www.apkbus.com/thread-600249-1-1.html)、[今日头条ChannelView](https://github.com/chengzhicao/ChannelView)、[模仿人人车](http://www.apkbus.com/thread-600215-1-1.html)
 - 收藏的小东西看完就删除：[1](http://www.apkbus.com/thread-578940-1-1.html)、
