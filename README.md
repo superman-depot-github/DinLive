@@ -11,7 +11,8 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 崩溃手机、热更新方案：[bugly、tinker](https://bugly.qq.com/docs/)
 - 屏幕适配方案：[AndroidAutoSize](https://github.com/JessYanCoding/AndroidAutoSize/blob/master/README-zh.md)
 - 视屏播放器：[GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer)
-- 直播礼物动画SVGA：[http://svga.io)
+- 酷炫动画：[SVGA动画]（http://svga.io)、
+          [Json动画](https://github.com/airbnb/lottie-android)
 - 网络请求框架：[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp) retrofit2+okhttp3+rxjava2二次封装
 - Glide图片套装：[glide](https://github.com/bumptech/glide)、[glide-transformations](https://github.com/wasabeef/glide-transformations)
 - BaseAdapter：[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
