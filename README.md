@@ -43,6 +43,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 图片拖拽：[高仿微信](https://github.com/githubwing/DragPhotoView)
 - 数据缓存：[hawk](https://github.com/orhanobut/hawk)、[Room数据库](https://developer.android.google.cn/jetpack/androidx/releases/room)
 - RecyclerView即画廊：[横竖卡片画廊](https://github.com/Azoft/CarouselLayoutManager)、
+                     [选中item放大的画廊](https://github.com/yarolegovich/DiscreteScrollView)、
 - 收藏的小东西看完就删除：[1](http://www.apkbus.com/thread-578940-1-1.html)、
                       [2](http://www.apkbus.com/thread-569482-1-1.html)、
                       [3](http://www.apkbus.com/thread-309926-1-1.html)、
