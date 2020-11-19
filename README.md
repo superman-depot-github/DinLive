@@ -35,7 +35,8 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 滑动布局:[DragSlopLayout](https://github.com/Rukey7/DragSlopLayout)
 - 九宫格:[NineGridView](https://github.com/Vanish136/NineGridView)、[LQRNineGridImageView](https://github.com/GitLqr/LQRNineGridImageView)、[RecyclerView九宫格](https://blog.csdn.net/cjs1534717040/article/details/78459821)
 - ios开关:[SwitchButton](https://github.com/zcweng/SwitchButton)、[EasySwitchButton](https://github.com/heshiweij/EasySwitchButton)
-- 状态栏:[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)
+- 状态栏:[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)、
+        [SystemBarTint](https://github.com/jgilfelt/SystemBarTint)
 - Android截屏:[Android截屏方案](https://www.jianshu.com/p/980a75a31f2f)
 - 引导页:[GuideViewt](https://github.com/binIoter/GuideView)
 - 仿QQ侧滑菜单:[SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout)
