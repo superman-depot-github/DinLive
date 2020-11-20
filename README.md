@@ -42,7 +42,9 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 仿QQ侧滑菜单:[SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout)
 - 频道管理：[模仿支付宝](http://www.apkbus.com/thread-600249-1-1.html)、[今日头条ChannelView](https://github.com/chengzhicao/ChannelView)、[模仿人人车](http://www.apkbus.com/thread-600215-1-1.html)
 - 图片拖拽：[高仿微信](https://github.com/githubwing/DragPhotoView)
-- 数据缓存：[hawk](https://github.com/orhanobut/hawk)、[Room数据库](https://developer.android.google.cn/jetpack/androidx/releases/room)
+- 数据缓存：[hawk](https://github.com/orhanobut/hawk)、
+           [Room数据库](https://developer.android.google.cn/jetpack/androidx/releases/room)
+           [realm-java](https://github.com/realm/realm-java)
 - RecyclerView即画廊：[横竖卡片画廊](https://github.com/Azoft/CarouselLayoutManager)、
                      [选中item放大的画廊](https://github.com/yarolegovich/DiscreteScrollView)、
 - 收藏的小东西看完就删除：[1](http://www.apkbus.com/thread-578940-1-1.html)、
