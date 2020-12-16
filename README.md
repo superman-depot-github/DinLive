@@ -50,11 +50,11 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 收藏的小东西看完就删除：[1](https://github.com/Yellow5A5/ClearScreenHelper)、
                       [2](https://github.com/Qiang3570/LiveLayout)、
                       [3](https://github.com/zuiwuyuan/WeChatPswKeyboard)、
-                      [4](http://www.apkbus.com/thread-268117-1-1.html)、
-                      [5](http://www.apkbus.com/thread-271454-1-1.html)、
-                      [6](http://www.apkbus.com/thread-306966-1-1.html)、
-                      [7](http://www.apkbus.com/thread-272481-1-1.html)、
-                      [8](http://www.apkbus.com/thread-271217-1-1.html)、
+                      [4](https://github.com/panpf/spider-web-score-view)、
+                      [5](https://github.com/zhangyuChen1991/Roll3DImageView)、
+                      [6](https://github.com/ernestoyaquello/VerticalStepperForm)、
+                      [7](https://github.com/ToDou/appbarlayout-spring-behavior)、
+                      [8](https://github.com/chilijung/android-stepsview)、
                       [9](http://www.apkbus.com/thread-266212-1-1.html)、
                       [10](https://github.com/bingoogolapple/BGAPhotoPicker-Android)、
                       [RV横向加载更多](https://blog.csdn.net/lanxuan1993/article/details/94559744)、
