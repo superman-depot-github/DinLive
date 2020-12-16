@@ -48,7 +48,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - RecyclerView即画廊：[横竖卡片画廊](https://github.com/Azoft/CarouselLayoutManager)、
                      [选中item放大的画廊](https://github.com/yarolegovich/DiscreteScrollView)、
 - 收藏的小东西看完就删除：[1](https://github.com/Yellow5A5/ClearScreenHelper)、
-                      [2](http://www.apkbus.com/thread-569482-1-1.html)、
+                      [2](https://github.com/Qiang3570/LiveLayout)、
                       [3](http://www.apkbus.com/thread-309926-1-1.html)、
                       [4](http://www.apkbus.com/thread-268117-1-1.html)、
                       [5](http://www.apkbus.com/thread-271454-1-1.html)、
