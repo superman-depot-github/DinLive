@@ -55,7 +55,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
                       [6](https://github.com/ernestoyaquello/VerticalStepperForm)、
                       [7](https://github.com/ToDou/appbarlayout-spring-behavior)、
                       [8](https://github.com/chilijung/android-stepsview)、
-                      [9](http://www.apkbus.com/thread-266212-1-1.html)、
+                      [9](https://github.com/XXApple/AndroidLibs)、
                       [10](https://github.com/bingoogolapple/BGAPhotoPicker-Android)、
                       [RV横向加载更多](https://blog.csdn.net/lanxuan1993/article/details/94559744)、
                       [横向无限选循环](http://www.apkbus.com/thread-464484-1-1.html)、
