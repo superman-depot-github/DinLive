@@ -3,17 +3,17 @@
 ## 技术要点  
 kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文件阅读、ARouter  
 项目采用MVC、MVVM两种开发模式，根据业务进行组件化开发、通过ARouter进行页面跳转和数据交互  
-- studio下载:[developer](https://developer.android.google.cn)
+- studio下载:[Developer](https://developer.android.google.cn)
 - 路由通信:[CC](https://qibilly.com/CC-website)、
           [ARouter](https://github.com/alibaba/ARouter/blob/master/README_CN.md)
 - 三方app渠道包插件:[VasDolly](https://github.com/Tencent/VasDolly/blob/master/command/README.md)
-- 崩溃手机、热更新方案:[bugly、tinker](https://bugly.qq.com/docs/)
+- 崩溃手机、热更新方案:[Bugly、Tinker](https://bugly.qq.com/docs/)
 - 屏幕适配方案:[AndroidAutoSize](https://github.com/JessYanCoding/AndroidAutoSize/blob/master/README-zh.md)
 - 视屏播放器:[GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer)
 - 酷炫动画:[SVGA动画](http://svga.io)、
           [Json动画](https://github.com/airbnb/lottie-android)
 - 网络请求框架:[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp)
-- Glide图片套装:[glide](https://github.com/bumptech/glide)、
+- Glide图片套装:[Glide](https://github.com/bumptech/glide)、
                [glide-transformations](https://github.com/wasabeef/glide-transformations)
 - BaseAdapter:[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
 - Web套装:[AgentWeb](https://github.com/Justson/AgentWeb)、
@@ -23,8 +23,8 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
         [SpringView](https://github.com/liaoinstan/SpringView)、
 - Toast:[UniversalToast](https://github.com/bboylin/UniversalToast)
 - Fragment管理:[Fragmentation](https://github.com/YoKeyword/Fragmentation/tree/master)
-- UI插件:[多功能的NiceImageView](https://github.com/SheHuan/NiceImageView)、
-        [五大布局FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
+- UI插件:[NiceImageView](https://github.com/SheHuan/NiceImageView)、
+        [FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
 - 安卓工具类库:[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode)
 - TextView:[SuperTextView](https://github.com/chenBingX/SuperTextView)
 - EventBus:[EventBus](https://github.com/greenrobot/EventBus)、
