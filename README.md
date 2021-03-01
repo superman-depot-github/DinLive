@@ -17,9 +17,10 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
                [glide-transformations](https://github.com/wasabeef/glide-transformations)
 - BaseAdapter:[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
 - Web套装:[AgentWeb](https://github.com/Justson/AgentWeb)、
-             [JsBridge](https://github.com/lzyzsd/JsBridge)、[TBS各种格式的文档阅读](https://x5.tencent.com)
+         [JsBridge](https://github.com/lzyzsd/JsBridge)、
+         [TBS阅读](https://x5.tencent.com)
 - 刷新UI:[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)、
-                   [SpringView](https://github.com/liaoinstan/SpringView)、
+        [SpringView](https://github.com/liaoinstan/SpringView)、
 - Toast:[UniversalToast](https://github.com/bboylin/UniversalToast)
 - Fragment管理:[Fragmentation](https://github.com/YoKeyword/Fragmentation/tree/master)
 - UI插件:[多功能的NiceImageView](https://github.com/SheHuan/NiceImageView)、
@@ -74,8 +75,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
                      [8](https://github.com/chilijung/android-stepsview)、
                      [9](https://github.com/XXApple/AndroidLibs)、
                      [10](https://github.com/bingoogolapple/BGAPhotoPicker-Android)、
-                     [RV横向加载更多](https://blog.csdn.net/lanxuan1993/article/details/94559744)、
-                     [横向无限选循环](http://www.apkbus.com/thread-464484-1-1.html)、
+                     [RV横向加载更多](https://blog.csdn.net/lanxuan1993/article/details/94559744)
  - 学习资料链接:[自定义控件](https://blog.csdn.net/harvic880925/article/details/50995268)、
               [Gradle](https://blog.csdn.net/heqiangflytosky/article/details/50853268)、
               [Nexus](https://blog.csdn.net/qinlincnds/article/details/90757619)、
