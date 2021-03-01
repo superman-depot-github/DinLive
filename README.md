@@ -12,16 +12,16 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 视屏播放器:[GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer)
 - 酷炫动画:[SVGA动画](http://svga.io)、
           [Json动画](https://github.com/airbnb/lottie-android)
-- 网络请求框架:[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp) retrofit2+okhttp3+rxjava2二次封装
+- 网络请求框架:[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp)
 - Glide图片套装:[glide](https://github.com/bumptech/glide)、
                [glide-transformations](https://github.com/wasabeef/glide-transformations)
 - BaseAdapter:[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
-- WebView功能集成:[AgentWeb](https://github.com/Justson/AgentWeb)、
-                 [JsBridge](https://github.com/lzyzsd/JsBridge)、[TBS各种格式的文档阅读](https://x5.tencent.com)
-- 上拉加载下拉刷新控件:[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)、
-                    [SpringView](https://github.com/liaoinstan/SpringView)、
+- Web套装:[AgentWeb](https://github.com/Justson/AgentWeb)、
+             [JsBridge](https://github.com/lzyzsd/JsBridge)、[TBS各种格式的文档阅读](https://x5.tencent.com)
+- 刷新UI:[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)、
+                   [SpringView](https://github.com/liaoinstan/SpringView)、
 - Toast:[UniversalToast](https://github.com/bboylin/UniversalToast)
-- Fragment任务栈管理:[Fragmentation](https://github.com/YoKeyword/Fragmentation/tree/master)
+- Fragment管理:[Fragmentation](https://github.com/YoKeyword/Fragmentation/tree/master)
 - UI插件:[多功能的NiceImageView](https://github.com/SheHuan/NiceImageView)、
         [五大布局FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
 - 安卓工具类库:[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode)
@@ -30,15 +30,16 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
            [不注册的LiveEventBus](https://github.com/JeremyLiao/LiveEventBus)
 - 动态权限:[RxPermissions](https://github.com/tbruyelle/RxPermissions)
 - 多功能TitleBar:[CommonTitleBar](https://github.com/wuhenzhizao/android-titlebar)
-- 可扩展MATERIAL和IOS风格Dialog:[DialogV3](https://github.com/kongzue/DialogV3)、
-                               [NiceDialog](https://github.com/SheHuan/NiceDialog)、[CircleDialog](https://github.com/mylhyl/Android-CircleDialog)
+- Dialog:[DialogV3(推荐)](https://github.com/kongzue/DialogV3)、
+         [NiceDialog](https://github.com/SheHuan/NiceDialog)、
+         [CircleDialog](https://github.com/mylhyl/Android-CircleDialog)
 - 可自定义布局的Banner:[XBanner](https://github.com/xiaohaibin/XBanner)、
-                     [ConvenientBanner](https://github.com/saiwu-bigkoo/Android-ConvenientBanner)
+                    [ConvenientBanner](https://github.com/saiwu-bigkoo/Android-ConvenientBanner)
 - 消息未读小红点:[MagicRedDot](https://github.com/kanglongba/MagicRedDot)
 - 多图列表及预览:[ZoomPreviewPicture](https://github.com/yangchaojiang/ZoomPreviewPicture)、
-               [PhotoPicker](https://github.com/yudu233/PhotoPicker)、
-               [PictureSelector](https://github.com/LuckSiege/PictureSelector)、
-               [ImageWatcher](https://github.com/iielse/ImageWatcher)
+              [PhotoPicker](https://github.com/yudu233/PhotoPicker)、
+              [PictureSelector](https://github.com/LuckSiege/PictureSelector)、
+              [ImageWatcher](https://github.com/iielse/ImageWatcher)
 - Android:[开源集合](https://hndeveloper.github.io/2017/github-android-ui.html#Spinner)、
           [2](https://blog.csdn.net/csdn576038874/article/details/81200674)、
           [3](https://github.com/XXApple/AndroidLibs/tree/master/完整开源项目Project)、
@@ -59,32 +60,32 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
           [模仿人人车](http://www.apkbus.com/thread-600215-1-1.html)
 - 图片拖拽:[高仿微信](https://github.com/githubwing/DragPhotoView)
 - 数据缓存:[hawk](https://github.com/orhanobut/hawk)、
-           [Room数据库](https://developer.android.google.cn/jetpack/androidx/releases/room)、
-           [realm-java](https://github.com/realm/realm-java)
+          [Room数据库](https://developer.android.google.cn/jetpack/androidx/releases/room)、
+          [realm-java](https://github.com/realm/realm-java)
 - RecyclerView即画廊:[横竖卡片画廊](https://github.com/Azoft/CarouselLayoutManager)、
                      [选中item放大的画廊](https://github.com/yarolegovich/DiscreteScrollView)、
 - 收藏的小东西看完就删除:[1](https://github.com/Yellow5A5/ClearScreenHelper)、
-                      [2](https://github.com/Qiang3570/LiveLayout)、
-                      [3](https://github.com/zuiwuyuan/WeChatPswKeyboard)、
-                      [4](https://github.com/panpf/spider-web-score-view)、
-                      [5](https://github.com/zhangyuChen1991/Roll3DImageView)、
-                      [6](https://github.com/ernestoyaquello/VerticalStepperForm)、
-                      [7](https://github.com/ToDou/appbarlayout-spring-behavior)、
-                      [8](https://github.com/chilijung/android-stepsview)、
-                      [9](https://github.com/XXApple/AndroidLibs)、
-                      [10](https://github.com/bingoogolapple/BGAPhotoPicker-Android)、
-                      [RV横向加载更多](https://blog.csdn.net/lanxuan1993/article/details/94559744)、
-                      [横向无限选循环](http://www.apkbus.com/thread-464484-1-1.html)、
+                     [2](https://github.com/Qiang3570/LiveLayout)、
+                     [3](https://github.com/zuiwuyuan/WeChatPswKeyboard)、
+                     [4](https://github.com/panpf/spider-web-score-view)、
+                     [5](https://github.com/zhangyuChen1991/Roll3DImageView)、
+                     [6](https://github.com/ernestoyaquello/VerticalStepperForm)、
+                     [7](https://github.com/ToDou/appbarlayout-spring-behavior)、
+                     [8](https://github.com/chilijung/android-stepsview)、
+                     [9](https://github.com/XXApple/AndroidLibs)、
+                     [10](https://github.com/bingoogolapple/BGAPhotoPicker-Android)、
+                     [RV横向加载更多](https://blog.csdn.net/lanxuan1993/article/details/94559744)、
+                     [横向无限选循环](http://www.apkbus.com/thread-464484-1-1.html)、
  - 学习资料链接:[自定义控件](https://blog.csdn.net/harvic880925/article/details/50995268)、
-                      [Gradle](https://blog.csdn.net/heqiangflytosky/article/details/50853268)、
-                      [Nexus](https://blog.csdn.net/qinlincnds/article/details/90757619)、
-                      [studio上传github](https://www.cnblogs.com/imqsl/p/6763133.html)、
-                      [Socket](https://www.jianshu.com/p/c27c4e9b2211)、
-                      [Handler](https://www.jianshu.com/p/f7cabfe19720)、
-                      [动画](https://www.jianshu.com/p/769242cba1f8)、
-                      [FFmpeg中文网](http://www.ffmpeg.club/android.html)、
-                      [FFmpeg官网](https://www.ffmpeg.org)、
-                      [FFmpeg编译Mac](https://zhuanlan.zhihu.com/p/76462890)、
+              [Gradle](https://blog.csdn.net/heqiangflytosky/article/details/50853268)、
+              [Nexus](https://blog.csdn.net/qinlincnds/article/details/90757619)、
+              [studio上传github](https://www.cnblogs.com/imqsl/p/6763133.html)、
+              [Socket](https://www.jianshu.com/p/c27c4e9b2211)、
+              [Handler](https://www.jianshu.com/p/f7cabfe19720)、
+              [动画](https://www.jianshu.com/p/769242cba1f8)、
+              [FFmpeg中文网](http://www.ffmpeg.club/android.html)、
+              [FFmpeg官网](https://www.ffmpeg.org)、
+              [FFmpeg编译Mac](https://zhuanlan.zhihu.com/p/76462890)、
                  
 ## 工程目录
 - app -> 壳模块  
