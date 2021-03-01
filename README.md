@@ -3,50 +3,67 @@
 ## 技术要点  
 kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文件阅读、ARouter  
 项目采用MVC、MVVM两种开发模式，根据业务进行组件化开发、通过ARouter进行页面跳转和数据交互  
-- studio下载：[developer](https://developer.android.google.cn)
-- 路由通信：[CC](https://qibilly.com/CC-website)、
+- studio下载:[developer](https://developer.android.google.cn)
+- 路由通信:[CC](https://qibilly.com/CC-website)、
           [ARouter](https://github.com/alibaba/ARouter/blob/master/README_CN.md)
-- 三方app渠道包插件：[VasDolly](https://github.com/Tencent/VasDolly/blob/master/command/README.md)
-- 崩溃手机、热更新方案：[bugly、tinker](https://bugly.qq.com/docs/)
-- 屏幕适配方案：[AndroidAutoSize](https://github.com/JessYanCoding/AndroidAutoSize/blob/master/README-zh.md)
-- 视屏播放器：[GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer)
-- 酷炫动画：[SVGA动画](http://svga.io)、
+- 三方app渠道包插件:[VasDolly](https://github.com/Tencent/VasDolly/blob/master/command/README.md)
+- 崩溃手机、热更新方案:[bugly、tinker](https://bugly.qq.com/docs/)
+- 屏幕适配方案:[AndroidAutoSize](https://github.com/JessYanCoding/AndroidAutoSize/blob/master/README-zh.md)
+- 视屏播放器:[GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer)
+- 酷炫动画:[SVGA动画](http://svga.io)、
           [Json动画](https://github.com/airbnb/lottie-android)
-- 网络请求框架：[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp) retrofit2+okhttp3+rxjava2二次封装
-- Glide图片套装：[glide](https://github.com/bumptech/glide)、[glide-transformations](https://github.com/wasabeef/glide-transformations)
-- BaseAdapter：[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
-- WebView功能集成：[AgentWeb](https://github.com/Justson/AgentWeb)、[JsBridge](https://github.com/lzyzsd/JsBridge)、[TBS各种格式的文档阅读](https://x5.tencent.com)
-- 上拉加载下拉刷新控件：[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)、
+- 网络请求框架:[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp) retrofit2+okhttp3+rxjava2二次封装
+- Glide图片套装:[glide](https://github.com/bumptech/glide)、
+               [glide-transformations](https://github.com/wasabeef/glide-transformations)
+- BaseAdapter:[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
+- WebView功能集成:[AgentWeb](https://github.com/Justson/AgentWeb)、
+                 [JsBridge](https://github.com/lzyzsd/JsBridge)、[TBS各种格式的文档阅读](https://x5.tencent.com)
+- 上拉加载下拉刷新控件:[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)、
                     [SpringView](https://github.com/liaoinstan/SpringView)、
-- Toast：[UniversalToast](https://github.com/bboylin/UniversalToast)
-- Fragment任务栈管理：[Fragmentation](https://github.com/YoKeyword/Fragmentation/tree/master)
-- UI插件：[多功能的NiceImageView](https://github.com/SheHuan/NiceImageView)、[五大布局FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
-- 安卓工具类库：[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode)
-- TextView：[SuperTextView](https://github.com/chenBingX/SuperTextView)
-- EventBus：[EventBus](https://github.com/greenrobot/EventBus)、[不注册的LiveEventBus](https://github.com/JeremyLiao/LiveEventBus)
-- 动态权限：[RxPermissions](https://github.com/tbruyelle/RxPermissions)
-- 多功能TitleBar：[CommonTitleBar](https://github.com/wuhenzhizao/android-titlebar)
-- 可扩展MATERIAL和IOS风格Dialog：[DialogV3](https://github.com/kongzue/DialogV3)、[NiceDialog](https://github.com/SheHuan/NiceDialog)、[CircleDialog](https://github.com/mylhyl/Android-CircleDialog)
-- 可自定义布局的Banner：[XBanner](https://github.com/xiaohaibin/XBanner)、[ConvenientBanner](https://github.com/saiwu-bigkoo/Android-ConvenientBanner)
+- Toast:[UniversalToast](https://github.com/bboylin/UniversalToast)
+- Fragment任务栈管理:[Fragmentation](https://github.com/YoKeyword/Fragmentation/tree/master)
+- UI插件:[多功能的NiceImageView](https://github.com/SheHuan/NiceImageView)、
+        [五大布局FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
+- 安卓工具类库:[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode)
+- TextView:[SuperTextView](https://github.com/chenBingX/SuperTextView)
+- EventBus:[EventBus](https://github.com/greenrobot/EventBus)、
+           [不注册的LiveEventBus](https://github.com/JeremyLiao/LiveEventBus)
+- 动态权限:[RxPermissions](https://github.com/tbruyelle/RxPermissions)
+- 多功能TitleBar:[CommonTitleBar](https://github.com/wuhenzhizao/android-titlebar)
+- 可扩展MATERIAL和IOS风格Dialog:[DialogV3](https://github.com/kongzue/DialogV3)、
+                               [NiceDialog](https://github.com/SheHuan/NiceDialog)、[CircleDialog](https://github.com/mylhyl/Android-CircleDialog)
+- 可自定义布局的Banner:[XBanner](https://github.com/xiaohaibin/XBanner)、
+                     [ConvenientBanner](https://github.com/saiwu-bigkoo/Android-ConvenientBanner)
 - 消息未读小红点:[MagicRedDot](https://github.com/kanglongba/MagicRedDot)
-- 多图列表及预览:[ZoomPreviewPicture](https://github.com/yangchaojiang/ZoomPreviewPicture)、[PhotoPicker](https://github.com/yudu233/PhotoPicker)、[PictureSelector](https://github.com/LuckSiege/PictureSelector)、[ImageWatcher](https://github.com/iielse/ImageWatcher)
-- Android:[开源集合](https://hndeveloper.github.io/2017/github-android-ui.html#Spinner)、[2](https://blog.csdn.net/csdn576038874/article/details/81200674)、[3](https://github.com/XXApple/AndroidLibs/tree/master/完整开源项目Project)、[4](https://www.jianshu.com/p/67da7b78e78a)
+- 多图列表及预览:[ZoomPreviewPicture](https://github.com/yangchaojiang/ZoomPreviewPicture)、
+               [PhotoPicker](https://github.com/yudu233/PhotoPicker)、
+               [PictureSelector](https://github.com/LuckSiege/PictureSelector)、
+               [ImageWatcher](https://github.com/iielse/ImageWatcher)
+- Android:[开源集合](https://hndeveloper.github.io/2017/github-android-ui.html#Spinner)、
+          [2](https://blog.csdn.net/csdn576038874/article/details/81200674)、
+          [3](https://github.com/XXApple/AndroidLibs/tree/master/完整开源项目Project)、
+          [4](https://www.jianshu.com/p/67da7b78e78a)
 - 滑动布局:[DragSlopLayout](https://github.com/Rukey7/DragSlopLayout)
-- 九宫格:[NineGridView](https://github.com/Vanish136/NineGridView)、[LQRNineGridImageView](https://github.com/GitLqr/LQRNineGridImageView)、[RecyclerView九宫格](https://blog.csdn.net/cjs1534717040/article/details/78459821)
-- ios开关:[SwitchButton](https://github.com/zcweng/SwitchButton)、[EasySwitchButton](https://github.com/heshiweij/EasySwitchButton)
+- 九宫格:[NineGridView](https://github.com/Vanish136/NineGridView)、
+        [LQRNineGridImageView](https://github.com/GitLqr/LQRNineGridImageView)、
+        [RecyclerView九宫格](https://blog.csdn.net/cjs1534717040/article/details/78459821)
+- ios开关:[SwitchButton](https://github.com/zcweng/SwitchButton)、
+         [EasySwitchButton](https://github.com/heshiweij/EasySwitchButton)
 - 状态栏:[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)、
         [SystemBarTint](https://github.com/jgilfelt/SystemBarTint)
 - Android截屏:[Android截屏方案](https://www.jianshu.com/p/980a75a31f2f)
 - 引导页:[GuideViewt](https://github.com/binIoter/GuideView)
 - 仿QQ侧滑菜单:[SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout)
-- 频道管理：[模仿支付宝](http://www.apkbus.com/thread-600249-1-1.html)、[今日头条ChannelView](https://github.com/chengzhicao/ChannelView)、[模仿人人车](http://www.apkbus.com/thread-600215-1-1.html)
-- 图片拖拽：[高仿微信](https://github.com/githubwing/DragPhotoView)
-- 数据缓存：[hawk](https://github.com/orhanobut/hawk)、
+- 频道管理:[模仿支付宝](http://www.apkbus.com/thread-600249-1-1.html)、
+          [今日头条ChannelView](https://github.com/chengzhicao/ChannelView)、
+          [模仿人人车](http://www.apkbus.com/thread-600215-1-1.html)
+- 图片拖拽:[高仿微信](https://github.com/githubwing/DragPhotoView)
+- 数据缓存:[hawk](https://github.com/orhanobut/hawk)、
            [Room数据库](https://developer.android.google.cn/jetpack/androidx/releases/room)、
            [realm-java](https://github.com/realm/realm-java)
-- RecyclerView即画廊：[横竖卡片画廊](https://github.com/Azoft/CarouselLayoutManager)、
+- RecyclerView即画廊:[横竖卡片画廊](https://github.com/Azoft/CarouselLayoutManager)、
                      [选中item放大的画廊](https://github.com/yarolegovich/DiscreteScrollView)、
-- 收藏的小东西看完就删除：[1](https://github.com/Yellow5A5/ClearScreenHelper)、
+- 收藏的小东西看完就删除:[1](https://github.com/Yellow5A5/ClearScreenHelper)、
                       [2](https://github.com/Qiang3570/LiveLayout)、
                       [3](https://github.com/zuiwuyuan/WeChatPswKeyboard)、
                       [4](https://github.com/panpf/spider-web-score-view)、
@@ -58,7 +75,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
                       [10](https://github.com/bingoogolapple/BGAPhotoPicker-Android)、
                       [RV横向加载更多](https://blog.csdn.net/lanxuan1993/article/details/94559744)、
                       [横向无限选循环](http://www.apkbus.com/thread-464484-1-1.html)、
- - 学习资料链接：[自定义控件](https://blog.csdn.net/harvic880925/article/details/50995268)、
+ - 学习资料链接:[自定义控件](https://blog.csdn.net/harvic880925/article/details/50995268)、
                       [Gradle](https://blog.csdn.net/heqiangflytosky/article/details/50853268)、
                       [Nexus](https://blog.csdn.net/qinlincnds/article/details/90757619)、
                       [studio上传github](https://www.cnblogs.com/imqsl/p/6763133.html)、
