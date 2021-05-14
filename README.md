@@ -5,6 +5,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 项目采用MVC、MVVM两种开发模式，根据业务进行组件化开发、通过ARouter进行页面跳转和数据交互  
 - studio下载:[Developer](https://developer.android.google.cn)
 - 路由通信:[CC](https://qibilly.com/CC-website)、
+          [Component](https://github.com/xiaojinzi123/Component)、
           [ARouter](https://github.com/alibaba/ARouter/blob/master/README_CN.md)
 - 三方app渠道包插件:[VasDolly](https://github.com/Tencent/VasDolly/blob/master/command/README.md)
 - 崩溃手机、热更新方案:[Bugly、Tinker](https://bugly.qq.com/docs/)
