@@ -61,6 +61,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
           [今日头条ChannelView](https://github.com/chengzhicao/ChannelView)、
           [模仿人人车](http://www.apkbus.com/thread-600215-1-1.html)
 - 图片拖拽:[高仿微信](https://github.com/githubwing/DragPhotoView)
+- TabBar:[MagicIndicator](https://github.com/hackware1993/MagicIndicator)
 - 数据缓存:[hawk](https://github.com/orhanobut/hawk)、
           [Room数据库](https://developer.android.google.cn/jetpack/androidx/releases/room)、
           [realm-java](https://github.com/realm/realm-java)
