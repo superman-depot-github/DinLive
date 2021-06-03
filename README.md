@@ -30,7 +30,8 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - TextView:[SuperTextView](https://github.com/chenBingX/SuperTextView)
 - EventBus:[EventBus](https://github.com/greenrobot/EventBus)、
            [不注册的LiveEventBus](https://github.com/JeremyLiao/LiveEventBus)
-- 动态权限:[RxPermissions](https://github.com/tbruyelle/RxPermissions)
+- 动态权限:[RxPermissions](https://github.com/tbruyelle/RxPermissions)、
+          [RxPermissions](https://github.com/tbruyelle/RxPermissions)
 - 多功能TitleBar:[CommonTitleBar](https://github.com/wuhenzhizao/android-titlebar)
 - Dialog:[DialogV3(推荐)](https://github.com/kongzue/DialogV3)、
          [NiceDialog](https://github.com/SheHuan/NiceDialog)、
