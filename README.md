@@ -16,7 +16,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 网络请求框架:[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp)
 - Glide图片套装:[Glide](https://github.com/bumptech/glide)、
                [glide-transformations](https://github.com/wasabeef/glide-transformations)
-- BaseAdapter:[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
+- BaseAdapter:[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)、[MultiType](https://github.com/drakeet/MultiType)
 - Web套装:[AgentWeb](https://github.com/Justson/AgentWeb)、
          [JsBridge](https://github.com/lzyzsd/JsBridge)、
          [TBS阅读](https://x5.tencent.com)
