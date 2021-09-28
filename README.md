@@ -66,6 +66,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - TabBar:[MagicIndicator](https://github.com/hackware1993/MagicIndicator)
 - 数据缓存:[hawk](https://github.com/orhanobut/hawk)、
           [Room数据库](https://developer.android.google.cn/jetpack/androidx/releases/room)、
+          [LitePal](https://github.com/guolindev/LitePal)、
           [realm-java](https://github.com/realm/realm-java)
 - popwindow:[XPopup](https://github.com/li-xiaojun/XPopup)
 - WebSocket实现IM:[1](https://github.com/0xZhangKe/WebSocketDemo)、
