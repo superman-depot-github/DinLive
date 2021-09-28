@@ -31,7 +31,8 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - EventBus:[EventBus](https://github.com/greenrobot/EventBus)、
            [不注册的LiveEventBus](https://github.com/JeremyLiao/LiveEventBus)
 - 动态权限:[RxPermissions](https://github.com/tbruyelle/RxPermissions)、
-          [XXPermissions](https://github.com/getActivity/XXPermissions)
+          [XXPermissions](https://github.com/getActivity/XXPermissions)、
+          [PermissionsDispatcher](https://github.com/permissions-dispatcher/PermissionsDispatcher)、
 - 多功能TitleBar:[CommonTitleBar](https://github.com/wuhenzhizao/android-titlebar)
 - Dialog:[DialogV3(推荐)](https://github.com/kongzue/DialogV3)、
          [NiceDialog](https://github.com/SheHuan/NiceDialog)、
@@ -66,6 +67,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 数据缓存:[hawk](https://github.com/orhanobut/hawk)、
           [Room数据库](https://developer.android.google.cn/jetpack/androidx/releases/room)、
           [realm-java](https://github.com/realm/realm-java)
+- popwindow:[XPopup](https://github.com/li-xiaojun/XPopup)
 - WebSocket实现IM:[1](https://github.com/0xZhangKe/WebSocketDemo)、
           [2](https://github.com/yangxch/WebSocketClient)     
 - RecyclerView即画廊:[横竖卡片画廊](https://github.com/Azoft/CarouselLayoutManager)、
