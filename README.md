@@ -48,7 +48,8 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
           [2](https://blog.csdn.net/csdn576038874/article/details/81200674)、
           [3](https://github.com/XXApple/AndroidLibs/tree/master/完整开源项目Project)、
           [4](https://www.jianshu.com/p/67da7b78e78a)
-- 滑动布局:[DragSlopLayout](https://github.com/Rukey7/DragSlopLayout)
+- 滑动布局:[DragSlopLayout](https://github.com/Rukey7/DragSlopLayout)、
+          [recyvlerview实现侧滑菜单](https://github.com/aitsuki/SwipeMenuRecyclerView)、
 - 九宫格:[NineGridView](https://github.com/Vanish136/NineGridView)、
         [LQRNineGridImageView](https://github.com/GitLqr/LQRNineGridImageView)、
         [RecyclerView九宫格](https://blog.csdn.net/cjs1534717040/article/details/78459821)
