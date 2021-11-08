@@ -13,7 +13,10 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 视屏播放器:[GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer)
 - 酷炫动画:[SVGA动画](http://svga.io)、
           [Json动画](https://github.com/airbnb/lottie-android)
-- 网络请求框架:[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp)
+- 网络请求框架:[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp)、
+             [download](https://github.com/zhoukang99/download)、
+             [FileDown](https://github.com/zlwmzh/FileDown)、
+              [DownQueue](https://github.com/Vurtex/DownQueue)、
 - Glide图片套装:[Glide](https://github.com/bumptech/glide)、
                [glide-transformations](https://github.com/wasabeef/glide-transformations)
 - BaseAdapter:[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)、[MultiType](https://github.com/drakeet/MultiType)
