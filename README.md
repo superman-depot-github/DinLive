@@ -17,6 +17,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
              [download](https://github.com/zhoukang99/download)、
              [FileDown](https://github.com/zlwmzh/FileDown)、
               [DownQueue](https://github.com/Vurtex/DownQueue)、
+               [XDownloadDemo](https://github.com/msdgwzhy6/XDownloadDemo)、
 - Glide图片套装:[Glide](https://github.com/bumptech/glide)、
                [glide-transformations](https://github.com/wasabeef/glide-transformations)
 - BaseAdapter:[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)、[MultiType](https://github.com/drakeet/MultiType)
