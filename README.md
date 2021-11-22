@@ -104,6 +104,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
               [FFmpeg中文网](http://www.ffmpeg.club/android.html)、
               [FFmpeg官网](https://www.ffmpeg.org)、
               [FFmpeg编译Mac](https://zhuanlan.zhihu.com/p/76462890)、
+              [MagicIndicator](https://github.com/hackware1993/MagicIndicator)
                  
 ## 工程目录
 - app -> 壳模块  
