@@ -16,8 +16,9 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - 网络请求框架:[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp)、
              [download](https://github.com/zhoukang99/download)、
              [FileDown](https://github.com/zlwmzh/FileDown)、
-              [DownQueue](https://github.com/Vurtex/DownQueue)、
-               [XDownloadDemo](https://github.com/msdgwzhy6/XDownloadDemo)、
+             [DownQueue](https://github.com/Vurtex/DownQueue)、
+             [XDownloadDemo](https://github.com/msdgwzhy6/XDownloadDemo)、
+             [Net](https://github.com/liangjingkanji/Net)、
 - Glide图片套装:[Glide](https://github.com/bumptech/glide)、
                [glide-transformations](https://github.com/wasabeef/glide-transformations)
 - 图片拖拽:[高仿微信](https://github.com/githubwing/DragPhotoView)
