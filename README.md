@@ -38,9 +38,6 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
           [XXPermissions](https://github.com/getActivity/XXPermissions)、
           [PermissionsDispatcher](https://github.com/permissions-dispatcher/PermissionsDispatcher)、
 - 多功能TitleBar:[CommonTitleBar](https://github.com/wuhenzhizao/android-titlebar)
-- Dialog:[DialogV3(推荐)](https://github.com/kongzue/DialogV3)、
-         [NiceDialog](https://github.com/SheHuan/NiceDialog)、
-         [CircleDialog](https://github.com/mylhyl/Android-CircleDialog)
 - 可自定义布局的Banner:[XBanner](https://github.com/xiaohaibin/XBanner)、
                     [ConvenientBanner](https://github.com/saiwu-bigkoo/Android-ConvenientBanner)
 - 消息未读小红点:[MagicRedDot](https://github.com/kanglongba/MagicRedDot)
@@ -74,7 +71,11 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
           [Room数据库](https://developer.android.google.cn/jetpack/androidx/releases/room)、
           [LitePal](https://github.com/guolindev/LitePal)、
           [realm-java](https://github.com/realm/realm-java)
-- popwindow:[XPopup](https://github.com/li-xiaojun/XPopup)
+- popwindow、dialog:[XPopup](https://github.com/li-xiaojun/XPopup)、
+            [EasyFloat](https://github.com/princekin-f/EasyFloat)、
+            [DialogV3(推荐)](https://github.com/kongzue/DialogV3)、
+            [NiceDialog](https://github.com/SheHuan/NiceDialog)、
+            [CircleDialog](https://github.com/mylhyl/Android-CircleDialog)
 - WebSocket实现IM:[1](https://github.com/0xZhangKe/WebSocketDemo)、
           [2](https://github.com/yangxch/WebSocketClient)     
 - RecyclerView即画廊:[横竖卡片画廊](https://github.com/Azoft/CarouselLayoutManager)、
