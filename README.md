@@ -51,7 +51,8 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - Android:[开源集合](https://hndeveloper.github.io/2017/github-android-ui.html#Spinner)、
           [2](https://blog.csdn.net/csdn576038874/article/details/81200674)、
           [3](https://github.com/XXApple/AndroidLibs/tree/master/完整开源项目Project)、
-          [4](https://www.jianshu.com/p/67da7b78e78a)
+          [4](https://www.jianshu.com/p/67da7b78e78a)、
+          [5](https://github.com/SenhLinsh/Android-Hot-Libraries)、
 - 滑动布局:[DragSlopLayout](https://github.com/Rukey7/DragSlopLayout)、
           [recyvlerview实现侧滑菜单](https://github.com/aitsuki/SwipeMenuRecyclerView)、
 - 九宫格:[NineGridView](https://github.com/Vanish136/NineGridView)、
