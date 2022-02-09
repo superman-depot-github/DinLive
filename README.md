@@ -30,7 +30,11 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
               [PictureSelector](https://github.com/LuckSiege/PictureSelector)、
               [Matisse](https://github.com/zhihu/Matisse)、
               [ImageWatcher](https://github.com/iielse/ImageWatcher)
-- BaseAdapter:[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)、[MultiType](https://github.com/drakeet/MultiType)
+              
+- BaseAdapter:[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)、
+              [MultiType](https://github.com/drakeet/MultiType)、
+              [左右上下滑动](https://github.com/alexzaitsev/freepager)、
+              
 - Web套装:[AgentWeb](https://github.com/Justson/AgentWeb)、
          [JsBridge](https://github.com/lzyzsd/JsBridge)、
          [TBS阅读](https://x5.tencent.com)
