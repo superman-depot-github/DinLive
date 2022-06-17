@@ -90,11 +90,11 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
           [2](https://github.com/yangxch/WebSocketClient)     
 - RecyclerView即画廊:[横竖卡片画廊](https://github.com/Azoft/CarouselLayoutManager)、
                      [选中item放大的画廊](https://github.com/yarolegovich/DiscreteScrollView)、
-- service:[DrawableToolbox](https://github.com/yigit/android-priority-jobqueue)
+- service:[jobqueue](https://github.com/yigit/android-priority-jobqueue)
           [jobqueue资料1](https://blog.csdn.net/moonshine99/article/details/77862254)、
           [jobqueue资料2](https://segmentfault.com/a/1190000040300302)、
 
-- drawable和shape:[JobService队列任务jobqueue](https://github.com/duanhong169/DrawableToolbox)
+- drawable和shape:[DrawableToolbox](https://github.com/duanhong169/DrawableToolbox)
           [OneDrawable](https://github.com/maoruibin/OneDrawable)、
           [SelectorDrawable](https://github.com/yuanwenbing/SelectorDrawable)、
                      
