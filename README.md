@@ -84,7 +84,6 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
           [PermissionsDispatcher](https://github.com/permissions-dispatcher/PermissionsDispatcher)、
 
 
-- 多功能TitleBar:[CommonTitleBar](https://github.com/wuhenzhizao/android-titlebar)
 
 - 可自定义布局的Banner:[XBanner](https://github.com/xiaohaibin/XBanner)、
                     [ConvenientBanner](https://github.com/saiwu-bigkoo/Android-ConvenientBanner)
@@ -107,8 +106,13 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 - ios开关:[SwitchButton](https://github.com/zcweng/SwitchButton)、
          [EasySwitchButton](https://github.com/heshiweij/EasySwitchButton)
 
-- 状态栏:[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)、
-        [SystemBarTint](https://github.com/jgilfelt/SystemBarTint)
+
+- 状态栏、多功能TitleBar、TabBar:[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)、
+        [SystemBarTint](https://github.com/jgilfelt/SystemBarTint)、
+        
+        [CommonTitleBar](https://github.com/wuhenzhizao/android-titlebar)、
+        
+        [MagicIndicator](https://github.com/hackware1993/MagicIndicator)、
 
 - Android截屏:[Android截屏方案](https://www.jianshu.com/p/980a75a31f2f)
 
@@ -122,7 +126,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
           [模仿人人车](http://www.apkbus.com/thread-600215-1-1.html)
          
 
-- TabBar:[MagicIndicator](https://github.com/hackware1993/MagicIndicator)
+
 
 - 缺省页:[MultiStatePage](https://github.com/Zhao-Yan-Yan/MultiStatePage)
 
