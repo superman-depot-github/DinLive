@@ -109,9 +109,7 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
 
 - 状态栏、多功能TitleBar、TabBar:[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)、
         [SystemBarTint](https://github.com/jgilfelt/SystemBarTint)、
-        
         [CommonTitleBar](https://github.com/wuhenzhizao/android-titlebar)、
-        
         [MagicIndicator](https://github.com/hackware1993/MagicIndicator)、
 
 - Android截屏:[Android截屏方案](https://www.jianshu.com/p/980a75a31f2f)
