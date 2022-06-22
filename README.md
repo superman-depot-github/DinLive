@@ -103,14 +103,14 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
           [jobqueue资料2](https://segmentfault.com/a/1190000040300302)、
 
 
-- drawable和shape:[DrawableToolbox](https://github.com/duanhong169/DrawableToolbox)
+- drawable和shape:[DrawableToolbox](https://github.com/duanhong169/DrawableToolbox)、
           [OneDrawable](https://github.com/maoruibin/OneDrawable)、
           [SelectorDrawable](https://github.com/yuanwenbing/SelectorDrawable)、
           [DrawableColorChange](https://github.com/mathiazhagan01/DrawableColorChange)、
           [ShadowDrawable](https://github.com/Liberuman/ShadowDrawable)、
         
         
-- apannable:[SpannableX](https://github.com/TxcA/SpannableX)
+- apannable:[SpannableX](https://github.com/TxcA/SpannableX)、
           [SpannableHelper](https://github.com/alguojian/SpannableHelper)、
           [SpanBuilder](https://github.com/zrq1060/SpanBuilder)、
           [spannable](https://github.com/liangjingkanji/spannable)、
