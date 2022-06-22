@@ -3,16 +3,24 @@
 ## 技术要点  
 kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文件阅读、ARouter  
 项目采用MVC、MVVM两种开发模式，根据业务进行组件化开发、通过ARouter进行页面跳转和数据交互  
+
 - studio下载:[Developer](https://developer.android.google.cn)
+
 - 路由通信:[CC](https://qibilly.com/CC-website)、
           [Component](https://github.com/xiaojinzi123/Component)、
           [ARouter](https://github.com/alibaba/ARouter/blob/master/README_CN.md)
+          
 - 三方app渠道包插件:[VasDolly](https://github.com/Tencent/VasDolly/blob/master/command/README.md)
+
 - 崩溃手机、热更新方案:[Bugly、Tinker](https://bugly.qq.com/docs/)
+
 - 屏幕适配方案:[AndroidAutoSize](https://github.com/JessYanCoding/AndroidAutoSize/blob/master/README-zh.md)
+
 - 视屏播放器:[GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer)
+
 - 酷炫动画:[SVGA动画](http://svga.io)、
           [Json动画](https://github.com/airbnb/lottie-android)
+          
 - 网络请求框架:[RxEasyHttp](https://github.com/zhou-you/RxEasyHttp)、
              [download](https://github.com/zhoukang99/download)、
              [FileDown](https://github.com/zlwmzh/FileDown)、
@@ -94,11 +102,19 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
           [jobqueue资料1](https://blog.csdn.net/moonshine99/article/details/77862254)、
           [jobqueue资料2](https://segmentfault.com/a/1190000040300302)、
 
+
 - drawable和shape:[DrawableToolbox](https://github.com/duanhong169/DrawableToolbox)
           [OneDrawable](https://github.com/maoruibin/OneDrawable)、
           [SelectorDrawable](https://github.com/yuanwenbing/SelectorDrawable)、
           [DrawableColorChange](https://github.com/mathiazhagan01/DrawableColorChange)、
           [ShadowDrawable](https://github.com/Liberuman/ShadowDrawable)、
+        
+        
+- apannable:[SpannableX](https://github.com/TxcA/SpannableX)
+          [SpannableHelper](https://github.com/alguojian/SpannableHelper)、
+          [SpanBuilder](https://github.com/zrq1060/SpanBuilder)、
+          [spannable](https://github.com/liangjingkanji/spannable)、
+          
                      
 - 收藏的小东西看完就删除:[1](https://github.com/Yellow5A5/ClearScreenHelper)、
                      [2](https://github.com/Qiang3570/LiveLayout)、
