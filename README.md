@@ -29,31 +29,52 @@ kotlin、组件化、rxjava2、retrofit2、tinker、视频播放、腾讯TBS文�
              [Net](https://github.com/liangjingkanji/Net)、
              
 - 模糊效果:[Blurry](https://github.com/wasabeef/Blurry)
+
 - 相机:[AndroidCamera](https://github.com/aserbao/AndroidCamera)
+
 - Glide图片套装:[Glide](https://github.com/bumptech/glide)、
                [glide-transformations](https://github.com/wasabeef/glide-transformations)
+
 - 图片拖拽:[高仿微信](https://github.com/githubwing/DragPhotoView)
+
+
 - 图片选择与预览:[ZoomPreviewPicture](https://github.com/yangchaojiang/ZoomPreviewPicture)、
               [PhotoPicker](https://github.com/yudu233/PhotoPicker)、
               [PictureSelector](https://github.com/LuckSiege/PictureSelector)、
               [Matisse](https://github.com/zhihu/Matisse)、
               [ImageWatcher](https://github.com/iielse/ImageWatcher)
-              
+
+
 - BaseAdapter:[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)、
               [MultiType](https://github.com/drakeet/MultiType)、
               [左右上下滑动](https://github.com/alexzaitsev/freepager)、
               
+
 - Web套装:[AgentWeb](https://github.com/Justson/AgentWeb)、
          [JsBridge](https://github.com/lzyzsd/JsBridge)、
          [TBS阅读](https://x5.tencent.com)
+
+
 - 刷新UI:[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)、
         [SpringView](https://github.com/liaoinstan/SpringView)、
+
+
 - Toast:[UniversalToast](https://github.com/bboylin/UniversalToast)
+
+
 - Fragment管理:[Fragmentation](https://github.com/YoKeyword/Fragmentation/tree/master)
+
+
 - UI插件:[NiceImageView](https://github.com/SheHuan/NiceImageView)、
         [FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
+
+
 - 安卓工具类库:[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode)
+
+
 - TextView:[SuperTextView](https://github.com/chenBingX/SuperTextView)
+
+
 - EventBus:[EventBus](https://github.com/greenrobot/EventBus)、
            [不注册的LiveEventBus](https://github.com/JeremyLiao/LiveEventBus)
 
